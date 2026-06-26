@@ -1,0 +1,71 @@
+- url: https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: TCG Group AU
+
+- url: https://www.treasurecollectables.com.au/collections/other-tcgs
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: Treasure Collectables
+
+- url: https://gamesportal.com.au/collections/one-piece-card-game
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: Games Portal
+
+- url: https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: Good Games (Coming Soon)
+
+- url: https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: Good Games (In Stock)
+
+- url: https://www.kaika.com.au/series/one-piece/
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: Kaika
+
+- url: https://collectiblemadness.com.au/collections/one-piece-card-game
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: Collectible Madness
+
+- url: https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: Gamers Room
+
+- url: https://www.gameology.com.au/collections/one-piece-booster-boxs
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: Gameology
+
+- url: https://www.m-g.com.au/pre-orders/
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: M-G
+
+- url: https://njcollectables.com.au/trading-card-games/one-piece
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: NJ Collectables
+
+- url: https://eetcg.com.au/collections/one-piece-card-game
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: EE TCG

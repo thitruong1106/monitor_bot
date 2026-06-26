@@ -1,0 +1,5 @@
+{
+  "one-piece": "https://discord.com/api/webhooks/YOUR_ID/YOUR_TOKEN",
+  "pokemon": "https://discord.com/api/webhooks/YOUR_ID/YOUR_TOKEN",
+  "_fallback": "https://discord.com/api/webhooks/YOUR_ID/YOUR_TOKEN"
+}
