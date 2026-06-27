@@ -83,6 +83,7 @@
       "https://www.gameology.com.au/products/one-piece-card-game-legacy-of-the-master-op-12-booster-box-japanese",
       "https://www.gameology.com.au/products/one-piece-card-game-memorial-collection-extra-booster-eb-01",
       "https://www.gameology.com.au/products/one-piece-card-game-op-07-500-years-in-the-future-booster-box-japanese",
+      "https://www.gameology.com.au/products/one-piece-card-game-op-11-a-fist-of-divine-speed-booster-box-for-asia-version",
       "https://www.gameology.com.au/products/one-piece-card-game-op-11-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-op-12-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-op-13-booster-box",
@@ -217,16 +218,16 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1782562669.3741996,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1782562677.1235797,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1782562655.79218,
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1782569296.4793015,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1782569302.5475059,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1782569282.8638852,
     "https://njcollectables.com.au/trading-card-games/one-piece": 1782519053.0208185,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1782562672.037654,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1782562657.421959,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1782562660.4681373,
-    "https://www.m-g.com.au/pre-orders/": 1782562674.3206043,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1782562652.4391122,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1782562654.0234458
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1782569299.181837,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1782569284.5351555,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1782569287.5756483,
+    "https://www.m-g.com.au/pre-orders/": 1782569299.6244667,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1782569279.5862093,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1782569281.2205827
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -598,6 +599,11 @@
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
+    },
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-11-a-fist-of-divine-speed-booster-box-for-asia-version": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-11-booster-box": {
       "available": true,
