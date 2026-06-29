@@ -224,16 +224,16 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1782696794.6767933,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1782696801.0112762,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1782696781.0852554,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1782696799.3639083,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1782696797.4360166,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1782696782.7573898,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1782696785.9027677,
-    "https://www.m-g.com.au/pre-orders/": 1782696798.01767,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1782696777.6644526,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1782696779.279367
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1782714019.9616742,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1782714025.8978076,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1782714006.370699,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1782714024.2953043,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1782714022.6541448,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1782714008.0183825,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1782714011.1431499,
+    "https://www.m-g.com.au/pre-orders/": 1782714023.0340548,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1782714002.8365808,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1782714004.582864
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -827,34 +827,34 @@
       "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-31": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-32": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-33": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-34": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-35": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-36": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-tin-pack-set-vol-3-display-ts-03": {
       "available": false,
