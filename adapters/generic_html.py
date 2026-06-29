@@ -127,9 +127,79 @@ def _fetch_kaika(url: str, session: requests.Session) -> list[dict]:
     return fetch_page(url, session)
 
 
-def _fetch_gamersroom(url: str, session: requests.Session) -> list[dict]:
-    """gamersroom.com.au — custom platform, HTML scrape."""
-    return fetch_page(url, session)
+def _fetch_gamersroom(base_url: str, session: requests.Session) -> list[dict]:
+    """
+    gamersroom.com.au — Havealook custom platform.
+
+    Product links match /shop/{slug}/{id}.
+    Out-of-stock items have "(Out of stock)" in the link text before the price.
+    Pages are paginated; append ?page=N to iterate (stops when a page returns
+    fewer links than the previous page, or no product links at all).
+    """
+    from urllib.parse import urlparse, urlunparse, parse_qs
+
+    PRODUCT_URL_RE = re.compile(
+        r"^https?://(?:www\.)?gamersroom\.com\.au/shop/[^/]+/\d+",
+        re.IGNORECASE,
+    )
+    OOS_RE = re.compile(r"\(Out\s+of\s+[Ss]tock\)", re.IGNORECASE)
+    PREORDER_RE = re.compile(r"\b(pre-?order|preorder|coming\s+soon)\b", re.IGNORECASE)
+
+    # Strip any existing page/filter params from the base URL so we control pagination
+    parsed = urlparse(base_url)
+    clean_base = urlunparse(parsed._replace(query="", fragment=""))
+
+    all_products: list[dict] = []
+    seen_urls: set[str] = set()
+
+    page = 1
+    while True:
+        page_url = f"{clean_base}?page={page}&items=20&sortBy="
+        logger.debug("Gamers Room fetch: %s", page_url)
+        resp = session.get(page_url)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        found_on_page = 0
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            # Ensure absolute URL
+            if href.startswith("/"):
+                href = "https://www.gamersroom.com.au" + href
+            if not PRODUCT_URL_RE.match(href):
+                continue
+            if href in seen_urls:
+                continue
+            seen_urls.add(href)
+
+            link_text = a.get_text(" ", strip=True)
+            is_oos = bool(OOS_RE.search(link_text))
+
+            # Strip the OOS marker and price from the title
+            title = OOS_RE.sub("", link_text)
+            # Remove trailing price: "$XX.XX incl. GST" or similar
+            title = re.sub(r"\s*\$[\d,]+\.?\d*.*$", "", title).strip()
+            title = title or "Unknown"
+
+            available = not is_oos
+            is_preorder = bool(PREORDER_RE.search(link_text)) and available
+            price = _extract_price(link_text)
+
+            all_products.append({
+                "product_url": href,
+                "title": title,
+                "available": available,
+                "is_preorder": is_preorder,
+                "price": price,
+            })
+            found_on_page += 1
+
+        if found_on_page == 0:
+            break  # No product links on this page — we're past the last page
+        page += 1
+
+    logger.info("Gamers Room adapter found %d products across %d page(s)", len(all_products), page - 1)
+    return all_products
 
 
 def _fetch_mg(url: str, session: requests.Session) -> list[dict]:
