@@ -306,7 +306,8 @@
       "https://www.m-g.com.au/product/drillers/",
       "https://www.m-g.com.au/product/eternal-decks/",
       "https://www.m-g.com.au/product/flamme-rouge-grand-tour-expansion/",
-      "https://www.m-g.com.au/product/gruntz-supplies-expansion/"
+      "https://www.m-g.com.au/product/gruntz-supplies-expansion/",
+      "https://www.m-g.com.au/product/if-words-could-kill/"
     ],
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": [
       "https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english",
@@ -354,18 +355,18 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1782732394.1887076,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1782732403.14818,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1782732380.0991583,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1782732401.4020157,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1782732405.2873013,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1782732399.1477046,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1782732397.5048733,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1782732382.0949323,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1782732385.0035596,
-    "https://www.m-g.com.au/pre-orders/": 1782732400.2409313,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1782732376.4397085,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1782732378.0776086
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1782744935.3923507,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1782744943.6399405,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1782744921.844374,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1782744941.9987638,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1782744945.6849477,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1782744940.3561397,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1782744938.7231476,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1782744923.5070808,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1782744926.54464,
+    "https://www.m-g.com.au/pre-orders/": 1782744940.8988473,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1782744918.5786824,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1782744920.2010088
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -1807,6 +1808,11 @@
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/if-words-could-kill/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
     },
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english": {
       "available": false,
