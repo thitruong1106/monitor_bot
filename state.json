@@ -14,6 +14,7 @@
     "https://eetcg.com.au/collections/one-piece-card-game": [
       "https://eetcg.com.au/products/one-piece-card-game-booster-display-op-18-release-date-20-nov-2026",
       "https://eetcg.com.au/products/one-piece-card-game-booster-display-tba-op-17",
+      "https://eetcg.com.au/products/one-piece-card-game-extra-booster-display-eb-06",
       "https://eetcg.com.au/products/one-piece-card-game-extra-booster-display-tba-eb-05",
       "https://eetcg.com.au/products/one-piece-card-game-mini-case-set-display-vol-3-ts-03",
       "https://eetcg.com.au/products/powerwave-deck-box"
@@ -307,7 +308,8 @@
       "https://www.m-g.com.au/product/eternal-decks/",
       "https://www.m-g.com.au/product/flamme-rouge-grand-tour-expansion/",
       "https://www.m-g.com.au/product/gruntz-supplies-expansion/",
-      "https://www.m-g.com.au/product/if-words-could-kill/"
+      "https://www.m-g.com.au/product/if-words-could-kill/",
+      "https://www.m-g.com.au/product/jisogi/"
     ],
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": [
       "https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english",
@@ -355,18 +357,18 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1782870909.3489141,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1782870918.3970878,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1782870895.3703082,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1782870916.7424803,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1782870920.623883,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1782870914.4778466,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1782870912.750575,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1782870897.0272439,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1782870900.2033534,
-    "https://www.m-g.com.au/pre-orders/": 1782870915.0626504,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1782870892.0235019,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1782870893.6286047
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1782886427.3226314,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1782886441.384139,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1782886413.49668,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1782886439.7379441,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1782886443.5521672,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1782886432.3112874,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1782886430.6673803,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1782886415.156996,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1782886418.2933047,
+    "https://www.m-g.com.au/pre-orders/": 1782886438.2476094,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1782886409.7346814,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1782886411.4332304
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -420,6 +422,11 @@
       "state": "unavailable"
     },
     "https://eetcg.com.au/collections/one-piece-card-game||https://eetcg.com.au/products/one-piece-card-game-booster-display-tba-op-17": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://eetcg.com.au/collections/one-piece-card-game||https://eetcg.com.au/products/one-piece-card-game-extra-booster-display-eb-06": {
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
@@ -1810,6 +1817,11 @@
       "state": "unavailable"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/if-words-could-kill/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/jisogi/": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
