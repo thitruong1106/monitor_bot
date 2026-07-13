@@ -405,6 +405,7 @@
       "https://www.tcgroupau.com.au/products/one-piece-card-game-royal-blood-op-09-booster-box-english",
       "https://www.tcgroupau.com.au/products/one-piece-card-game-royal-blood-op-10-booster-box-english",
       "https://www.tcgroupau.com.au/products/one-piece-card-game-special-goods-set-former-four-emperors",
+      "https://www.tcgroupau.com.au/products/one-piece-card-game-the-worlds-strongest-warriors-booster-box-english",
       "https://www.tcgroupau.com.au/products/one-piece-card-game-two-legends-op-08-booster-box-english",
       "https://www.tcgroupau.com.au/products/one-piece-card-game-wings-of-the-captain-op-06-sealed-case-x12-booster-boxes-english",
       "https://www.tcgroupau.com.au/products/one-piece-memorial-collection-extra-booster-eb-01-booster-box-english",
@@ -419,19 +420,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1783905357.6742702,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1783905366.1653879,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1783905344.0514388,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1783905364.5405726,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1783905368.2236488,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1783905362.7154553,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1783905368.3778288,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1783905361.0529172,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1783905345.6840694,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1783905348.6908598,
-    "https://www.m-g.com.au/pre-orders/": 1783905363.1662443,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1783905340.7079287,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1783905342.3160622
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1783918055.8557239,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1783918065.0770838,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1783918042.3267157,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1783918063.4088736,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1783918067.1387012,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1783918060.9963598,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1783918067.2662354,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1783918059.2067451,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1783918043.983783,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1783918046.9990773,
+    "https://www.m-g.com.au/pre-orders/": 1783918062.016564,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1783918038.8579402,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1783918040.4951696
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2342,6 +2343,11 @@
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/one-piece-card-game-special-goods-set-former-four-emperors": {
       "available": false,
       "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/one-piece-card-game-the-worlds-strongest-warriors-booster-box-english": {
+      "available": false,
+      "is_preorder": true,
       "state": "unavailable"
     },
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/one-piece-card-game-two-legends-op-08-booster-box-english": {
