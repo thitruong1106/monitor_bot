@@ -371,7 +371,8 @@
       "https://www.m-g.com.au/product/gruntz-supplies-expansion/",
       "https://www.m-g.com.au/product/if-words-could-kill/",
       "https://www.m-g.com.au/product/jisogi/",
-      "https://www.m-g.com.au/product/march-of-the-ants-evolved-edition/"
+      "https://www.m-g.com.au/product/march-of-the-ants-evolved-edition/",
+      "https://www.m-g.com.au/product/morty-sorty-magic-shop/"
     ],
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": [
       "https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english",
@@ -420,19 +421,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1784211240.324362,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1784211250.0684597,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1784211226.7346919,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1784211248.4251363,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1784211252.172814,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1784211245.384398,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1784211252.3183594,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1784211243.720557,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1784211228.39299,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1784211231.3696294,
-    "https://www.m-g.com.au/pre-orders/": 1784211246.781128,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1784211223.277348,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1784211224.930072
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1784216808.830755,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1784216821.9519844,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1784216794.9173248,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1784216820.3160455,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1784216824.056725,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1784216813.8108997,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1784216824.1941974,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1784216812.1603513,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1784216796.5621862,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1784216799.6405125,
+    "https://www.m-g.com.au/pre-orders/": 1784216819.1455626,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1784216791.5062914,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1784216793.1443267
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2189,6 +2190,11 @@
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/morty-sorty-magic-shop/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
     },
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english": {
       "available": false,
