@@ -420,19 +420,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1784175156.9986143,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1784175165.6656961,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1784175142.972252,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1784175164.0669413,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1784175167.8144252,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1784175162.1441953,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1784175167.9724805,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1784175160.3680944,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1784175144.6078799,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1784175148.0540075,
-    "https://www.m-g.com.au/pre-orders/": 1784175162.5762482,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1784175139.493384,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1784175141.1887748
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1784183401.066693,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1784183409.973194,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1784183387.5265353,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1784183408.3480747,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1784183411.9525967,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1784183406.1309118,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1784183412.117271,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1784183404.4465997,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1784183389.141445,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1784183392.3338144,
+    "https://www.m-g.com.au/pre-orders/": 1784183406.7425315,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1784183384.2379904,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1784183385.8518116
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -1331,9 +1331,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-op-17-booster-box": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box": {
       "available": false,
@@ -1566,9 +1566,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-17-booster-box": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box": {
       "available": false,
