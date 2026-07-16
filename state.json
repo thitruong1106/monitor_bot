@@ -372,7 +372,8 @@
       "https://www.m-g.com.au/product/if-words-could-kill/",
       "https://www.m-g.com.au/product/jisogi/",
       "https://www.m-g.com.au/product/march-of-the-ants-evolved-edition/",
-      "https://www.m-g.com.au/product/morty-sorty-magic-shop/"
+      "https://www.m-g.com.au/product/morty-sorty-magic-shop/",
+      "https://www.m-g.com.au/product/munchkin-second-edition/"
     ],
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": [
       "https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english",
@@ -421,19 +422,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1784232110.661228,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1784232123.6448789,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1784232097.1638858,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1784232121.9904768,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1784232125.4780393,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1784232115.6452963,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1784232125.593163,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1784232114.0091999,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1784232098.820371,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1784232101.7669613,
-    "https://www.m-g.com.au/pre-orders/": 1784232120.427616,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1784232093.7703373,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1784232095.4209855
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1784235944.1487086,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1784235953.162882,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1784235930.1041203,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1784235951.3124285,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1784235955.5314019,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1784235949.287761,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1784235955.7330878,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1784235947.5575533,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1784235931.7530603,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1784235934.9362507,
+    "https://www.m-g.com.au/pre-orders/": 1784235949.7393315,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1784235926.476859,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1784235928.1441286
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2192,6 +2193,11 @@
       "state": "unavailable"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/morty-sorty-magic-shop/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/munchkin-second-edition/": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
