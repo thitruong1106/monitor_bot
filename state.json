@@ -351,6 +351,7 @@
       "https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-36",
       "https://www.goodgames.com.au/products/one-piece-grand-ship-collection-queen-mama-chanter",
       "https://www.goodgames.com.au/products/one-piece-hidden-dissectibles-s4",
+      "https://www.goodgames.com.au/products/one-piece-tcg-op-13-japanese-booster-pack",
       "https://www.goodgames.com.au/products/one-piecec-figurable-bag-clip-series-3",
       "https://www.goodgames.com.au/products/top-trumps-specials-one-piece"
     ],
@@ -434,19 +435,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1784757803.6603684,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1784757813.3092573,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1784757790.1556582,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1784757811.6579032,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1784757817.203986,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1784757808.763701,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1784757817.970622,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1784757807.0292761,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1784757791.813721,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1784757794.8291943,
-    "https://www.m-g.com.au/pre-orders/": 1784757810.2178514,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1784757786.618683,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1784757788.2608712
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1784761890.767239,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1784761900.771065,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1784761877.3432007,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1784761899.055292,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1784761902.8126013,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1784761895.6716712,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1784761902.9537368,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1784761894.0326912,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1784761878.9753509,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1784761881.999827,
+    "https://www.m-g.com.au/pre-orders/": 1784761897.9902961,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1784761873.9779725,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1784761875.6155505
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2105,6 +2106,11 @@
       "state": "in_stock"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-hidden-dissectibles-s4": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-tcg-op-13-japanese-booster-pack": {
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
