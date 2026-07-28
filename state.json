@@ -313,6 +313,7 @@
       "https://www.goodgames.com.au/products/one-piece-card-game-booster-pack-tba-op-17",
       "https://www.goodgames.com.au/products/one-piece-card-game-double-pack-display-tba-dp-12",
       "https://www.goodgames.com.au/products/one-piece-card-game-double-pack-tba-dp-12",
+      "https://www.goodgames.com.au/products/one-piece-card-game-double-pack-tba-dp-13",
       "https://www.goodgames.com.au/products/one-piece-card-game-extra-booster-box-eb-05",
       "https://www.goodgames.com.au/products/one-piece-card-game-extra-booster-pack-eb-05",
       "https://www.goodgames.com.au/products/one-piece-card-game-gift-collection-display-heroines-gc-2026",
@@ -435,19 +436,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1785200545.367541,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1785200555.498439,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1785200531.3745823,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1785200553.8445966,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1785200557.5344765,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1785200550.3837392,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1785200557.641468,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1785200548.7062178,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1785200533.0377965,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1785200536.0411015,
-    "https://www.m-g.com.au/pre-orders/": 1785200552.6428757,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1785200527.984472,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1785200529.6551025
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1785212105.174893,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1785212117.559763,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1785212091.3294973,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1785212115.9645574,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1785212119.485834,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1785212110.3043084,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1785212119.7627714,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1785212108.5129657,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1785212092.9668314,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1785212096.1913912,
+    "https://www.m-g.com.au/pre-orders/": 1785212114.4617934,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1785212088.0878396,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1785212089.6754494
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -1926,6 +1927,11 @@
       "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-double-pack-tba-dp-12": {
+      "available": false,
+      "is_preorder": true,
+      "state": "unavailable"
+    },
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-double-pack-tba-dp-13": {
       "available": false,
       "is_preorder": true,
       "state": "unavailable"
