@@ -387,7 +387,8 @@
       "https://www.m-g.com.au/product/morty-sorty-magic-shop/",
       "https://www.m-g.com.au/product/munchkin-second-edition/",
       "https://www.m-g.com.au/product/play-ball/",
-      "https://www.m-g.com.au/product/radlands-essentials-complete-edition/"
+      "https://www.m-g.com.au/product/radlands-essentials-complete-edition/",
+      "https://www.m-g.com.au/product/root-the-homeland-expansion/"
     ],
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": [
       "https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english",
@@ -436,19 +437,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1785419303.4901056,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1785419315.688306,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1785419289.9152396,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1785419314.0494843,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1785419317.7634044,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1785419308.4764457,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1785419317.9074945,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1785419306.8245919,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1785419291.5667293,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1785419294.6332903,
-    "https://www.m-g.com.au/pre-orders/": 1785419312.8456118,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1785419286.5674665,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1785419288.1962068
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1785426202.4157221,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1785426216.002863,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1785426188.548358,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1785426214.07971,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1785426218.0996447,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1785426207.6919906,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1785426218.462721,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1785426205.7719476,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1785426190.2170267,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1785426193.5243661,
+    "https://www.m-g.com.au/pre-orders/": 1785426212.7075713,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1785426185.0462122,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1785426186.7513888
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2282,6 +2283,11 @@
       "state": "unavailable"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/radlands-essentials-complete-edition/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/root-the-homeland-expansion/": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
