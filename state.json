@@ -377,6 +377,9 @@
       "https://www.m-g.com.au/product/dd-reference-cards-spells-levels-0-1/",
       "https://www.m-g.com.au/product/dd-reference-cards-spells-levels-2-3/",
       "https://www.m-g.com.au/product/dd-reference-cards-spells-levels-4-5/",
+      "https://www.m-g.com.au/product/dd-world-of-warcraft-alt-art/",
+      "https://www.m-g.com.au/product/dd-world-of-warcraft-dungeon-masters-screen/",
+      "https://www.m-g.com.au/product/dd-world-of-warcraft/",
       "https://www.m-g.com.au/product/drillers/",
       "https://www.m-g.com.au/product/eternal-decks/",
       "https://www.m-g.com.au/product/flamme-rouge-grand-tour-expansion/",
@@ -437,19 +440,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786439708.9070075,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1786439722.7433283,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1786439695.431274,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1786439721.1233535,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786439725.0008209,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786439714.1016,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786439725.1698513,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786439712.312255,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786439697.0937428,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786439700.0777755,
-    "https://www.m-g.com.au/pre-orders/": 1786439719.1810472,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786439692.0970922,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786439693.71369
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786443029.0278916,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1786443041.9172661,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1786443015.2336178,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1786443040.2489548,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786443043.9488673,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786443034.1347413,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786443044.0802758,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786443032.372742,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786443016.8969126,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786443019.9741933,
+    "https://www.m-g.com.au/pre-orders/": 1786443038.8526382,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786443011.8811932,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786443013.535161
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2228,6 +2231,21 @@
       "state": "preorder_open"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/dd-reference-cards-spells-levels-4-5/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/dd-world-of-warcraft-alt-art/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/dd-world-of-warcraft-dungeon-masters-screen/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/dd-world-of-warcraft/": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
