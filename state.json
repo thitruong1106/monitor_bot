@@ -20,7 +20,8 @@
       "https://collectiblemadness.com.au/products/one-piece-card-game-tba-op-18-booster-box",
       "https://collectiblemadness.com.au/products/one-piece-card-game-the-azure-seas-seven-dp-09",
       "https://collectiblemadness.com.au/products/one-piece-card-game-the-time-of-battle-dp-11",
-      "https://collectiblemadness.com.au/products/one-piece-card-game-tin-pack-vol-2-ts-02"
+      "https://collectiblemadness.com.au/products/one-piece-card-game-tin-pack-vol-2-ts-02",
+      "https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-saber-of-xebec-puzzle"
     ],
     "https://eetcg.com.au/collections/one-piece-card-game": [
       "https://eetcg.com.au/products/one-piece-card-game-booster-display-op-18-release-date-20-nov-2026",
@@ -440,19 +441,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786520920.3756094,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1786520929.0718353,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1786520906.9558718,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1786520927.3968675,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786520931.109052,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786520925.4203823,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786520931.3592577,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786520923.727027,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786520908.6286066,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786520911.6586936,
-    "https://www.m-g.com.au/pre-orders/": 1786520925.975459,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786520903.6254437,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786520905.2717278
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786524765.7902725,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1786524774.5956075,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1786524752.0129054,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1786524772.9673061,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786524776.7834282,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786524770.8717675,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786524776.939978,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786524769.1813695,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786524753.6737447,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786524756.6625009,
+    "https://www.m-g.com.au/pre-orders/": 1786524771.441916,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786524748.6030922,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786524750.2574177
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -554,6 +555,11 @@
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
+    },
+    "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-saber-of-xebec-puzzle": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
     },
     "https://eetcg.com.au/collections/one-piece-card-game||https://eetcg.com.au/products/one-piece-card-game-booster-display-op-18-release-date-20-nov-2026": {
       "available": false,
