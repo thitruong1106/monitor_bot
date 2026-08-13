@@ -21,7 +21,12 @@
       "https://collectiblemadness.com.au/products/one-piece-card-game-the-azure-seas-seven-dp-09",
       "https://collectiblemadness.com.au/products/one-piece-card-game-the-time-of-battle-dp-11",
       "https://collectiblemadness.com.au/products/one-piece-card-game-tin-pack-vol-2-ts-02",
-      "https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-saber-of-xebec-puzzle"
+      "https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-going-merry-puzzle",
+      "https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-polar-tang-puzzle",
+      "https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-red-force-puzzle",
+      "https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-saber-of-xebec-puzzle",
+      "https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-thousand-sunny-puzzle",
+      "https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-victoria-punk-puzzle"
     ],
     "https://eetcg.com.au/collections/one-piece-card-game": [
       "https://eetcg.com.au/products/one-piece-card-game-booster-display-op-18-release-date-20-nov-2026",
@@ -442,19 +447,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786581988.3116872,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1786582001.6344442,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1786581974.262659,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1786581999.9881492,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786582003.719,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786581993.4017193,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786582003.8805673,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786581991.673035,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786581975.9306047,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786581979.015287,
-    "https://www.m-g.com.au/pre-orders/": 1786581998.4582756,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786581970.865754,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786581972.499934
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786590899.5400646,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1786590909.2117164,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1786590885.9055512,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1786590907.5512934,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786590911.2793953,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786590904.6911137,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786590911.385077,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786590902.9463322,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786590887.6009486,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786590890.56018,
+    "https://www.m-g.com.au/pre-orders/": 1786590905.9698756,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786590882.5223472,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786590884.1450088
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -557,7 +562,32 @@
       "is_preorder": false,
       "state": "unavailable"
     },
+    "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-going-merry-puzzle": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-polar-tang-puzzle": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-red-force-puzzle": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-saber-of-xebec-puzzle": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-thousand-sunny-puzzle": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/wa-gu-mi-one-piece-victoria-punk-puzzle": {
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
@@ -678,9 +708,9 @@
       "state": "in_stock"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-op-17-booster-box": {
-      "available": false,
+      "available": true,
       "is_preorder": true,
-      "state": "unavailable"
+      "state": "preorder_open"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-starter-deck-ace-newgate-st-22": {
       "available": false,
@@ -2478,9 +2508,9 @@
       "state": "unavailable"
     },
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/one-piece-card-game-the-worlds-strongest-warriors-booster-box-english": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/one-piece-card-game-two-legends-op-08-booster-box-english": {
       "available": false,
