@@ -287,6 +287,7 @@
       "https://www.gamersroom.com.au/shop/one-piece-card-game-booster-display-tba-op-16/269796",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-booster-display-tba-op-17/276222",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-booster-display-tba-op-18/279160",
+      "https://www.gamersroom.com.au/shop/one-piece-card-game-booster-display-tba-op-19/287627",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-double-pack-legacy-of-the-master/252741",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-english-1st-anniversary-set/233191",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-extra-booster-display-tba-eb-02/248679",
@@ -451,19 +452,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786865922.1952431,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1786865930.3985953,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1786865908.7570462,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1786865928.7662945,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786865932.4886482,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786865927.242397,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786865932.606824,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786865925.5575438,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786865910.5407689,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786865913.4286525,
-    "https://www.m-g.com.au/pre-orders/": 1786865927.5896637,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786865905.3644707,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786865907.028284
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786866977.1507194,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1786866990.3536565,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1786866963.6701167,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1786866988.67799,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786866992.510003,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786866982.2968416,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786866992.6774428,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786866980.5869918,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786866965.324669,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786866968.3371406,
+    "https://www.m-g.com.au/pre-orders/": 1786866987.3604894,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786866960.2765882,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786866961.908152
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -1822,6 +1823,11 @@
       "state": "in_stock"
     },
     "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249||https://www.gamersroom.com.au/shop/one-piece-card-game-booster-display-tba-op-18/279160": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249||https://www.gamersroom.com.au/shop/one-piece-card-game-booster-display-tba-op-19/287627": {
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
