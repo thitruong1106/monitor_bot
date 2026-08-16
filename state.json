@@ -306,6 +306,7 @@
       "https://www.gamersroom.com.au/shop/one-piece-card-game-starter-deck-ex-display-gear-5-st-21/246844",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-starter-deck-luffy-ace-st-30/2846609",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-starter-deck-tba-st-31/269801",
+      "https://www.gamersroom.com.au/shop/one-piece-card-game-starter-deck-tba-st-32/269802",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-starter-deck-tba-st-33/269803",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-starter-deck-tba-st-34/269804",
       "https://www.gamersroom.com.au/shop/one-piece-card-game-tba-booster-display-op-07/2724754",
@@ -450,19 +451,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786863891.6383426,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1786863901.0165257,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1786863878.2118146,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1786863899.3795953,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786863903.1044514,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786863896.7565496,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786863903.289679,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786863895.0309436,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786863879.860973,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786863882.8565142,
-    "https://www.m-g.com.au/pre-orders/": 1786863898.0958605,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786863874.825501,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786863876.4839625
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786865922.1952431,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1786865930.3985953,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1786865908.7570462,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1786865928.7662945,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786865932.4886482,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786865927.242397,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786865932.606824,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786865925.5575438,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786865910.5407689,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786865913.4286525,
+    "https://www.m-g.com.au/pre-orders/": 1786865927.5896637,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786865905.3644707,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786865907.028284
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -1916,6 +1917,11 @@
       "state": "in_stock"
     },
     "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249||https://www.gamersroom.com.au/shop/one-piece-card-game-starter-deck-tba-st-31/269801": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249||https://www.gamersroom.com.au/shop/one-piece-card-game-starter-deck-tba-st-32/269802": {
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
