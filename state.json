@@ -404,7 +404,12 @@
       "https://www.m-g.com.au/product/munchkin-second-edition/",
       "https://www.m-g.com.au/product/play-ball/",
       "https://www.m-g.com.au/product/radlands-essentials-complete-edition/",
-      "https://www.m-g.com.au/product/root-the-homeland-expansion/"
+      "https://www.m-g.com.au/product/root-the-homeland-expansion/",
+      "https://www.m-g.com.au/product/santorini-god-pack-hiding-in-the-underworld/",
+      "https://www.m-g.com.au/product/santorini-god-pack-sailing-with-odysseus/",
+      "https://www.m-g.com.au/product/santorini-god-pack-seasons-of-chaos/",
+      "https://www.m-g.com.au/product/santorini-god-pack-soaring-over-mount-olympus/",
+      "https://www.m-g.com.au/product/schadenfreude/"
     ],
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": [
       "https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english",
@@ -453,19 +458,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786975066.9353325,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1786975075.7424479,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1786975053.1413724,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1786975074.0807774,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786975077.8733182,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786975072.1026564,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786975077.9845154,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786975070.3582866,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786975054.8029318,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786975057.842785,
-    "https://www.m-g.com.au/pre-orders/": 1786975072.6755095,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786975049.6730008,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786975051.375165
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1786976449.9679677,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1786976459.076341,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1786976436.5285583,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1786976457.434694,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1786976461.2310948,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1786976455.0114284,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1786976461.3618033,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1786976453.314216,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1786976438.2052755,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1786976441.2225204,
+    "https://www.m-g.com.au/pre-orders/": 1786976456.393011,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1786976433.1296923,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1786976434.8267047
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2384,6 +2389,31 @@
       "state": "preorder_open"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/root-the-homeland-expansion/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/santorini-god-pack-hiding-in-the-underworld/": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/santorini-god-pack-sailing-with-odysseus/": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/santorini-god-pack-seasons-of-chaos/": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/santorini-god-pack-soaring-over-mount-olympus/": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/schadenfreude/": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
