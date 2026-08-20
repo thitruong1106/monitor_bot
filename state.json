@@ -31,6 +31,7 @@
     "https://eetcg.com.au/collections/one-piece-card-game": [
       "https://eetcg.com.au/products/one-piece-card-game-booster-display-op-18-release-date-20-nov-2026",
       "https://eetcg.com.au/products/one-piece-card-game-booster-display-tba-op-17",
+      "https://eetcg.com.au/products/one-piece-card-game-double-pack-display-dp-12-release-date-28-aug-2026",
       "https://eetcg.com.au/products/one-piece-card-game-extra-booster-display-eb-06",
       "https://eetcg.com.au/products/one-piece-card-game-extra-booster-display-tba-eb-05",
       "https://eetcg.com.au/products/one-piece-card-game-mini-case-set-display-vol-3-ts-03",
@@ -458,19 +459,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1787183211.7998457,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1787183220.3570516,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1787183198.341916,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1787183218.7293415,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1787183222.1959348,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1787183216.8629444,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1787183222.4201956,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1787183215.1410284,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1787183200.0519392,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1787183203.001774,
-    "https://www.m-g.com.au/pre-orders/": 1787183217.5137043,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1787183194.9458554,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1787183196.6384664
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1787188267.0686831,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1787188276.6880336,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1787188253.36681,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1787188275.01092,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1787188278.8525212,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1787188272.1611507,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1787188279.0668783,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1787188270.4795809,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1787188255.0346198,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1787188258.1102173,
+    "https://www.m-g.com.au/pre-orders/": 1787188273.7407172,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1787188250.032439,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1787188251.6645691
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -609,6 +610,11 @@
       "state": "unavailable"
     },
     "https://eetcg.com.au/collections/one-piece-card-game||https://eetcg.com.au/products/one-piece-card-game-booster-display-tba-op-17": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://eetcg.com.au/collections/one-piece-card-game||https://eetcg.com.au/products/one-piece-card-game-double-pack-display-dp-12-release-date-28-aug-2026": {
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
