@@ -459,19 +459,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1787289534.454266,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1787289542.8724442,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1787289520.7315361,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1787289541.2516828,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1787289544.9184837,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1787289539.5629919,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1787289545.1743274,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1787289537.7924871,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1787289522.412132,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1787289525.4286535,
-    "https://www.m-g.com.au/pre-orders/": 1787289540.065319,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1787289517.2287288,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1787289518.8768914
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1787291424.9329948,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1787291433.2972517,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1787291411.4469516,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1787291431.6390514,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1787291435.5093133,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1787291430.0225816,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1787291435.6395273,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1787291428.2875853,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1787291413.1200023,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1787291416.137532,
+    "https://www.m-g.com.au/pre-orders/": 1787291430.4907904,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1787291408.108565,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1787291409.7660825
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -801,8 +801,8 @@
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-the-worlds-strongest-warriors-op-17-booster": {
       "available": true,
-      "is_preorder": true,
-      "state": "preorder_open"
+      "is_preorder": false,
+      "state": "in_stock"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-tin-pack-set-vol-2-ts-02": {
       "available": false,
@@ -1370,9 +1370,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-inherited-will-op-13-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-kingdoms-of-intrigue-op-04-booster-box": {
       "available": true,
@@ -1430,9 +1430,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-op-15-adventure-on-kamis-island-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-op-15-booster-box": {
       "available": true,
@@ -1490,9 +1490,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-pillars-of-strength-op-03-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-prb-01-premium-booster-box": {
       "available": true,
@@ -1520,9 +1520,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-royal-blood-op-10-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-tba-op-09-booster-box": {
       "available": true,
@@ -1535,9 +1535,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-the-four-emperors-op-09-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-two-legends-op-08-booster-box-1": {
       "available": true,
@@ -1545,14 +1545,14 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-wings-of-the-captain-op-05-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-tcg-romance-dawn-op-01-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-500-years-in-the-future-op-07-booster-box": {
       "available": true,
@@ -1610,9 +1610,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-inherited-will-op-13-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-kingdoms-of-intrigue-op-04-booster-box": {
       "available": true,
@@ -1670,9 +1670,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-15-adventure-on-kamis-island-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-15-booster-box": {
       "available": true,
@@ -1730,9 +1730,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-pillars-of-strength-op-03-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-prb-01-premium-booster-box": {
       "available": true,
@@ -1760,9 +1760,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-royal-blood-op-10-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-tba-op-09-booster-box": {
       "available": true,
@@ -1775,9 +1775,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-the-four-emperors-op-09-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-two-legends-op-08-booster-box-1": {
       "available": true,
@@ -1785,14 +1785,14 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-wings-of-the-captain-op-05-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-tcg-romance-dawn-op-01-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249||https://www.gamersroom.com.au/shop/one-piece-card-game-awakening-of-the-new-era-op-05-booster-display/228981": {
       "available": false,
