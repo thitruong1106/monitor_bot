@@ -383,6 +383,7 @@
       "https://www.m-g.com.au/product/company-of-heroes-2nd-edition-core-set/",
       "https://www.m-g.com.au/product/container-more-containers-expansion/",
       "https://www.m-g.com.au/product/dd-beadle-grimms-dungeon-masters-guide-premium-map-collection/",
+      "https://www.m-g.com.au/product/dd-decision-d20-mega-die-mdg/",
       "https://www.m-g.com.au/product/dd-reference-cards-magic-items-common-and-uncommon/",
       "https://www.m-g.com.au/product/dd-reference-cards-magic-items-rare-and-very-rare/",
       "https://www.m-g.com.au/product/dd-reference-cards-monsters-animals-and-npcs-cr-0-5/",
@@ -461,19 +462,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1787997831.9459107,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1787997840.271215,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1787997818.410937,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1787997838.6065753,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1787997842.272453,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1787997837.0816367,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1787997842.3910067,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1787997835.340796,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1787997820.082943,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1787997823.1248517,
-    "https://www.m-g.com.au/pre-orders/": 1787997837.563224,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1787997815.1051989,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1787997816.7733362
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1788015591.1957335,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1788015599.822403,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1788015577.7677875,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1788015598.1856375,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1788015601.9380274,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1788015596.212939,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1788015602.121663,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1788015594.5199468,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1788015579.4251633,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1788015582.438398,
+    "https://www.m-g.com.au/pre-orders/": 1788015596.7925732,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1788015574.4232805,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1788015576.051826
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2285,6 +2286,11 @@
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/dd-decision-d20-mega-die-mdg/": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/dd-reference-cards-magic-items-common-and-uncommon/": {
       "available": true,
