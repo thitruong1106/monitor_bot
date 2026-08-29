@@ -401,6 +401,7 @@
       "https://www.m-g.com.au/product/gruntz-supplies-expansion/",
       "https://www.m-g.com.au/product/if-words-could-kill/",
       "https://www.m-g.com.au/product/jisogi/",
+      "https://www.m-g.com.au/product/love-letter-deluxe-edition/",
       "https://www.m-g.com.au/product/march-of-the-ants-evolved-edition/",
       "https://www.m-g.com.au/product/morty-sorty-magic-shop/",
       "https://www.m-g.com.au/product/munchkin-second-edition/",
@@ -460,19 +461,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1787973305.2687514,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1787973319.2856965,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1787973291.1038048,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1787973317.587664,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1787973321.5130045,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1787973310.6022415,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1787973322.198428,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1787973308.6386364,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1787973292.821907,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1787973295.9192827,
-    "https://www.m-g.com.au/pre-orders/": 1787973316.11348,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1787973287.5600433,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1787973289.2344837
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1787997831.9459107,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1787997840.271215,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1787997818.410937,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1787997838.6065753,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1787997842.272453,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1787997837.0816367,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1787997842.3910067,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1787997835.340796,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1787997820.082943,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1787997823.1248517,
+    "https://www.m-g.com.au/pre-orders/": 1787997837.563224,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1787997815.1051989,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1787997816.7733362
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2371,6 +2372,11 @@
       "state": "preorder_open"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/jisogi/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/love-letter-deluxe-edition/": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
