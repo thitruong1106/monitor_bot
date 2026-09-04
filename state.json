@@ -402,6 +402,7 @@
       "https://www.m-g.com.au/product/eternal-decks/",
       "https://www.m-g.com.au/product/flamme-rouge-grand-tour-expansion/",
       "https://www.m-g.com.au/product/gruntz-supplies-expansion/",
+      "https://www.m-g.com.au/product/harmonies-crescendo-expansion/",
       "https://www.m-g.com.au/product/if-words-could-kill/",
       "https://www.m-g.com.au/product/jisogi/",
       "https://www.m-g.com.au/product/love-letter-deluxe-edition/",
@@ -465,19 +466,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1788499772.2501028,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1788499780.9573038,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1788499758.669382,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1788499779.2991304,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1788499783.3385477,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1788499777.2927334,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1788499783.448113,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1788499775.5775504,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1788499760.3604264,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1788499763.3912418,
-    "https://www.m-g.com.au/pre-orders/": 1788499778.0587742,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1788499753.4373693,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1788499756.779731
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1788515434.2935343,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1788515447.6681614,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1788515420.8212996,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1788515446.0339997,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1788515449.873825,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1788515439.3688304,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1788515449.984481,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1788515437.6854343,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1788515422.482863,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1788515425.4985268,
+    "https://www.m-g.com.au/pre-orders/": 1788515444.697838,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1788515417.457973,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1788515419.083005
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2384,6 +2385,11 @@
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/harmonies-crescendo-expansion/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/if-words-could-kill/": {
       "available": true,
