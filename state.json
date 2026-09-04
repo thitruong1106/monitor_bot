@@ -212,6 +212,7 @@
       "https://www.gameology.com.au/products/one-piece-card-game-op-16-booster-box-x-12-case",
       "https://www.gameology.com.au/products/one-piece-card-game-op-16-the-time-of-battle-booster-box-japanese",
       "https://www.gameology.com.au/products/one-piece-card-game-op-17-booster-box",
+      "https://www.gameology.com.au/products/one-piece-card-game-op-17-the-worlds-strongest-warriors-booster-box-japanese",
       "https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-op-19-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-paramount-war-op-02-booster-box",
@@ -262,6 +263,7 @@
       "https://www.gameology.com.au/products/one-piece-card-game-op-16-booster-box-x-12-case",
       "https://www.gameology.com.au/products/one-piece-card-game-op-16-the-time-of-battle-booster-box-japanese",
       "https://www.gameology.com.au/products/one-piece-card-game-op-17-booster-box",
+      "https://www.gameology.com.au/products/one-piece-card-game-op-17-the-worlds-strongest-warriors-booster-box-japanese",
       "https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-op-19-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-paramount-war-op-02-booster-box",
@@ -466,19 +468,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1788515434.2935343,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1788515447.6681614,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1788515420.8212996,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1788515446.0339997,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1788515449.873825,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1788515439.3688304,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1788515449.984481,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1788515437.6854343,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1788515422.482863,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1788515425.4985268,
-    "https://www.m-g.com.au/pre-orders/": 1788515444.697838,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1788515417.457973,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1788515419.083005
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1788529728.281145,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1788529740.1679745,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1788529714.3875496,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1788529738.562827,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1788529742.21366,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1788529733.29121,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1788529742.4124157,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1788529731.6008205,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1788529716.0438328,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1788529719.049415,
+    "https://www.m-g.com.au/pre-orders/": 1788529737.3846061,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1788529710.9656684,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1788529712.610354
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -1486,6 +1488,11 @@
       "is_preorder": true,
       "state": "unavailable"
     },
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-op-17-the-worlds-strongest-warriors-booster-box-japanese": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box": {
       "available": false,
       "is_preorder": true,
@@ -1725,6 +1732,11 @@
       "available": false,
       "is_preorder": true,
       "state": "unavailable"
+    },
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-17-the-worlds-strongest-warriors-booster-box-japanese": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box": {
       "available": false,
