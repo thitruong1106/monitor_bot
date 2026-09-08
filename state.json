@@ -370,6 +370,7 @@
       "https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-36",
       "https://www.goodgames.com.au/products/one-piece-grand-ship-collection-queen-mama-chanter",
       "https://www.goodgames.com.au/products/one-piece-hidden-dissectibles-s4",
+      "https://www.goodgames.com.au/products/one-piece-luffys-bento-panic",
       "https://www.goodgames.com.au/products/one-piece-tcg-op-13-japanese-booster-pack",
       "https://www.goodgames.com.au/products/one-piecec-figurable-bag-clip-series-3",
       "https://www.goodgames.com.au/products/top-trumps-specials-one-piece"
@@ -469,19 +470,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1788842247.0355418,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1788842260.106279,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1788842233.2559254,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1788842258.48565,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1788842262.2071605,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1788842252.1260107,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1788842262.320631,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1788842250.446973,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1788842234.896657,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1788842237.912437,
-    "https://www.m-g.com.au/pre-orders/": 1788842257.073645,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1788842229.9094143,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1788842231.54037
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1788858172.7924838,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1788858184.9689329,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1788858159.1592638,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1788858183.2892766,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1788858187.004763,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1788858177.8284674,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1788858187.2509255,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1788858176.1375687,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1788858160.8371308,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1788858163.8571281,
+    "https://www.m-g.com.au/pre-orders/": 1788858181.447814,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1788858155.7948515,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1788858157.4936714
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2235,6 +2236,11 @@
       "state": "in_stock"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-hidden-dissectibles-s4": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-luffys-bento-panic": {
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
