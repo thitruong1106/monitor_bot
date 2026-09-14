@@ -59,6 +59,7 @@
       "https://gamesportal.com.au/products/one-piece-card-game-op-15-booster-pack",
       "https://gamesportal.com.au/products/one-piece-card-game-op-16-booster-box",
       "https://gamesportal.com.au/products/one-piece-card-game-op-17-booster-box",
+      "https://gamesportal.com.au/products/one-piece-card-game-set-sail-deck-set-sd-01",
       "https://gamesportal.com.au/products/one-piece-card-game-starter-deck-ace-newgate-st-22",
       "https://gamesportal.com.au/products/one-piece-card-game-starter-deck-ace-newgate-st-29",
       "https://gamesportal.com.au/products/one-piece-card-game-starter-deck-st-25",
@@ -471,19 +472,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1789366309.8323114,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1789366319.4774415,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1789366296.3515995,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1789366317.8674111,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1789366321.5228083,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1789366314.9599574,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1789366321.721298,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1789366313.2737787,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1789366298.0087476,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1789366301.0376372,
-    "https://www.m-g.com.au/pre-orders/": 1789366316.3756273,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1789366293.0635164,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1789366294.709322
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1789389551.0863934,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1789389559.786747,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1789389537.1672587,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1789389558.0504856,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1789389561.9984963,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1789389556.2296543,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1789389562.144468,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1789389554.4742315,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1789389538.8510711,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1789389541.9724865,
+    "https://www.m-g.com.au/pre-orders/": 1789389556.6716561,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1789389533.1412568,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1789389534.799736
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -755,6 +756,11 @@
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
+    },
+    "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-set-sail-deck-set-sd-01": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-starter-deck-ace-newgate-st-22": {
       "available": false,
