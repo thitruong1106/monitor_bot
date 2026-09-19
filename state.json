@@ -475,19 +475,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1789799114.427914,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1789799122.2819853,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1789799101.0112224,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1789799120.6485405,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1789799124.3274977,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1789799119.4333277,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1789799124.4785788,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1789799117.7497983,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1789799102.6752005,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1789799105.688166,
-    "https://www.m-g.com.au/pre-orders/": 1789799119.7325213,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1789799097.6699598,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1789799099.339338
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1789816420.8044422,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1789816432.9273922,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1789816407.380682,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1789816431.3093538,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1789816435.0249088,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1789816425.9011102,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1789816435.155266,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1789816424.206975,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1789816409.0353107,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1789816411.9708998,
+    "https://www.m-g.com.au/pre-orders/": 1789816430.1450076,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1789816404.0634255,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1789816405.710863
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -701,9 +701,9 @@
       "state": "unavailable"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-eb-05-booster-box": {
-      "available": false,
+      "available": true,
       "is_preorder": true,
-      "state": "unavailable"
+      "state": "preorder_open"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-learn-together-deck-set-lt-01": {
       "available": false,
@@ -721,9 +721,9 @@
       "state": "unavailable"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-one-piece-heroines-edition-vol-2-eb-05-booster": {
-      "available": false,
+      "available": true,
       "is_preorder": true,
-      "state": "unavailable"
+      "state": "preorder_open"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-op-12-booster-box": {
       "available": false,
