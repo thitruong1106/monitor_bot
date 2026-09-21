@@ -81,6 +81,7 @@
     ],
     "https://njcollectables.com.au/trading-card-games/one-piece": [
       "https://njcollectables.com.au/one-piece-card-game-booster-display-carrying-on-his-will-op-13",
+      "https://njcollectables.com.au/one-piece-card-game-booster-display-tba-op-17",
       "https://njcollectables.com.au/one-piece-card-game-learn-together-deck-set-display-ld-01",
       "https://njcollectables.com.au/one-piece-card-game-official-sleeves-display-set-11-kuzan-design",
       "https://njcollectables.com.au/one-piece-card-game-official-sleeves-display-set-11-rosinante-design",
@@ -475,19 +476,19 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1789954378.5062387,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1789954388.2645338,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1789954364.9271364,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1789954386.616864,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1789954390.2973025,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1789954383.5474932,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1789954390.4666634,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1789954381.8433044,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1789954366.5963874,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1789954369.6095781,
-    "https://www.m-g.com.au/pre-orders/": 1789954385.6329908,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1789954361.5657766,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1789954363.230795
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1789973875.9714901,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1789973887.0733361,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1789973861.9287045,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1789973885.3642757,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1789973889.1693015,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1789973881.6125038,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1789973889.3844635,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1789973879.8526769,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1789973863.6311443,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1789973866.7212646,
+    "https://www.m-g.com.au/pre-orders/": 1789973882.260301,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1789973858.4187617,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1789973860.0769231
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -856,6 +857,11 @@
       "state": "unavailable"
     },
     "https://njcollectables.com.au/trading-card-games/one-piece||https://njcollectables.com.au/one-piece-card-game-booster-display-carrying-on-his-will-op-13": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://njcollectables.com.au/trading-card-games/one-piece||https://njcollectables.com.au/one-piece-card-game-booster-display-tba-op-17": {
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
@@ -1416,9 +1422,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-inherited-will-op-13-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-kingdoms-of-intrigue-op-04-booster-box": {
       "available": true,
@@ -1661,9 +1667,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-inherited-will-op-13-booster-box-japanese": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-kingdoms-of-intrigue-op-04-booster-box": {
       "available": true,
