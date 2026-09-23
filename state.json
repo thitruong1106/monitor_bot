@@ -141,6 +141,7 @@
       "https://rhysticnostalgiagaming.com.au/products/one-piece-tcg-extra-booster-display-eb-05",
       "https://rhysticnostalgiagaming.com.au/products/one-piece-tcg-extra-booster-display-eb-06",
       "https://rhysticnostalgiagaming.com.au/products/one-piece-tcg-kingdoms-of-intrigue-op-04-booster-box",
+      "https://rhysticnostalgiagaming.com.au/products/one-piece-tcg-premium-extra-booster-display-peb-01",
       "https://rhysticnostalgiagaming.com.au/products/paramount-war-booster-box",
       "https://rhysticnostalgiagaming.com.au/products/paramount-war-booster-pack",
       "https://rhysticnostalgiagaming.com.au/products/pillars-of-strength-booster-box",
@@ -485,20 +486,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1790145720.8772457,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1790145730.8997164,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1790145712.8795338,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1790145729.2600904,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1790145732.9756906,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1790145725.9072092,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1790145733.1306055,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1790145724.2226334,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1790145714.5841346,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1790145717.6000001,
-    "https://www.kaika.com.au/series/one-piece/": 1790145719.1583788,
-    "https://www.m-g.com.au/pre-orders/": 1790145727.7214246,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1790145709.4460862,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1790145711.1346138
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1790165295.6518457,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1790165304.2722087,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1790165287.476287,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1790165302.617999,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1790165306.3267899,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1790165300.7353358,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1790165306.5051599,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1790165298.955424,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1790165289.174614,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1790165292.220991,
+    "https://www.kaika.com.au/series/one-piece/": 1790165293.9330957,
+    "https://www.m-g.com.au/pre-orders/": 1790165301.1963768,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1790165284.13149,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1790165285.784477
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -1157,6 +1158,11 @@
       "state": "unavailable"
     },
     "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock||https://rhysticnostalgiagaming.com.au/products/one-piece-tcg-kingdoms-of-intrigue-op-04-booster-box": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock||https://rhysticnostalgiagaming.com.au/products/one-piece-tcg-premium-extra-booster-display-peb-01": {
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
