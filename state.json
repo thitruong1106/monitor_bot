@@ -456,6 +456,7 @@
       "https://www.tcgroupau.com.au/products/one-piece-card-game-emperors-in-the-new-world-double-pack-display-dp-06-english",
       "https://www.tcgroupau.com.au/products/one-piece-card-game-emperors-in-the-new-world-op-09-sealed-case-x12-booster-boxes-english",
       "https://www.tcgroupau.com.au/products/one-piece-card-game-english-1st-anniversary-set",
+      "https://www.tcgroupau.com.au/products/one-piece-card-game-gift-collection-display-heroines-gc-2026",
       "https://www.tcgroupau.com.au/products/one-piece-card-game-legacy-of-the-master-op-12-booster-box-english",
       "https://www.tcgroupau.com.au/products/one-piece-card-game-legacy-of-the-master-op-12-dp-08-double-pack",
       "https://www.tcgroupau.com.au/products/one-piece-card-game-memorial-collection-extra-booster-box-eb-02-english",
@@ -488,20 +489,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1790672411.9683604,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1790672420.5206435,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1790672404.364996,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1790672418.8765647,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1790672422.5826483,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1790672416.9922652,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1790672422.72291,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1790672415.343684,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1790672406.0277717,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1790672409.0362139,
-    "https://www.kaika.com.au/series/one-piece/": 1790672410.2279818,
-    "https://www.m-g.com.au/pre-orders/": 1790672417.7657533,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1790672401.0352163,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1790672402.6731753
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1790695451.936772,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1790695460.47797,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1790695443.670586,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1790695458.8286633,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1790695462.4594202,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1790695456.942625,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1790695462.611913,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1790695455.2709591,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1790695445.3279119,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1790695448.3495657,
+    "https://www.kaika.com.au/series/one-piece/": 1790695450.2810032,
+    "https://www.m-g.com.au/pre-orders/": 1790695457.7343898,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1790695440.3367624,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1790695441.9905384
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2658,6 +2659,11 @@
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
+    },
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/one-piece-card-game-gift-collection-display-heroines-gc-2026": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
     },
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/one-piece-card-game-legacy-of-the-master-op-12-booster-box-english": {
       "available": false,
