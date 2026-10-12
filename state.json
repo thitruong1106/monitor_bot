@@ -38,6 +38,7 @@
       "https://eetcg.com.au/products/one-piece-card-game-extra-booster-display-eb-06",
       "https://eetcg.com.au/products/one-piece-card-game-extra-booster-display-tba-eb-05",
       "https://eetcg.com.au/products/one-piece-card-game-mini-case-set-display-vol-3-ts-03",
+      "https://eetcg.com.au/products/one-piece-card-game-premium-extra-booster-display-peb-01",
       "https://eetcg.com.au/products/powerwave-deck-box"
     ],
     "https://gamesportal.com.au/collections/one-piece-card-game": [
@@ -499,20 +500,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1791771285.449936,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1791771293.937792,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1791771278.3614926,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1791771292.284862,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1791771295.923782,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1791771290.4788768,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1791771296.0841122,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1791771288.795258,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1791771280.0342348,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1791771283.0542228,
-    "https://www.kaika.com.au/series/one-piece/": 1791771283.7737334,
-    "https://www.m-g.com.au/pre-orders/": 1791771291.1847606,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1791771274.9475875,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1791771276.5951908
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1791796337.0703745,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1791796345.6837685,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1791796329.1102426,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1791796344.0098255,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1791796347.740814,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1791796342.0569658,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1791796347.9231403,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1791796340.3886993,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1791796330.754294,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1791796333.820976,
+    "https://www.kaika.com.au/series/one-piece/": 1791796335.349602,
+    "https://www.m-g.com.au/pre-orders/": 1791796343.2424798,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1791796325.5697007,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1791796327.327002
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -686,6 +687,11 @@
       "state": "unavailable"
     },
     "https://eetcg.com.au/collections/one-piece-card-game||https://eetcg.com.au/products/one-piece-card-game-mini-case-set-display-vol-3-ts-03": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://eetcg.com.au/collections/one-piece-card-game||https://eetcg.com.au/products/one-piece-card-game-premium-extra-booster-display-peb-01": {
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
