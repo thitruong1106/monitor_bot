@@ -499,20 +499,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1791759795.7205117,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1791759808.7235584,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1791759786.8982081,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1791759806.9924555,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1791759810.8999584,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1791759800.9135501,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1791759811.1590173,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1791759799.1206849,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1791759788.609361,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1791759791.7507265,
-    "https://www.kaika.com.au/series/one-piece/": 1791759793.9345884,
-    "https://www.m-g.com.au/pre-orders/": 1791759805.615633,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1791759783.441795,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1791759785.129162
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1791771285.449936,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1791771293.937792,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1791771278.3614926,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1791771292.284862,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1791771295.923782,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1791771290.4788768,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1791771296.0841122,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1791771288.795258,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1791771280.0342348,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1791771283.0542228,
+    "https://www.kaika.com.au/series/one-piece/": 1791771283.7737334,
+    "https://www.m-g.com.au/pre-orders/": 1791771291.1847606,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1791771274.9475875,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1791771276.5951908
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -776,9 +776,9 @@
       "state": "unavailable"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-op-16-booster-box": {
-      "available": false,
+      "available": true,
       "is_preorder": false,
-      "state": "unavailable"
+      "state": "in_stock"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-op-17-booster-box": {
       "available": true,
@@ -2231,9 +2231,9 @@
       "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon||https://www.goodgames.com.au/products/one-piece-card-game-tin-pack-set-vol-3-ts-03": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/clementoni-puzzle-hqc-anime-cube-dragonball-500-piece-puzzle-2": {
       "available": true,
