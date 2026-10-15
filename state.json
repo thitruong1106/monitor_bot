@@ -392,7 +392,9 @@
       "https://www.kaika.com.au/series/one-piece/?pr=300-400&rf=pr",
       "https://www.kaika.com.au/series/one-piece/?pr=400-500&rf=pr",
       "https://www.kaika.com.au/series/one-piece/?pr=500-600&rf=pr",
-      "https://www.kaika.com.au/series/one-piece/?pr=600-0&rf=pr"
+      "https://www.kaika.com.au/series/one-piece/?pr=600-0&rf=pr",
+      "https://www.kaika.com.au/series/one-piece/?pr=600-700&rf=pr",
+      "https://www.kaika.com.au/series/one-piece/?pr=700-0&rf=pr"
     ],
     "https://www.m-g.com.au/pre-orders/": [
       "https://www.m-g.com.au/product/agricola-special-wooden-edition/",
@@ -501,20 +503,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1792021282.1195693,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1792021291.229552,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1792021273.2269385,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1792021289.5026627,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1792021293.5428898,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1792021287.239725,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1792021293.7467365,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1792021285.469059,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1792021274.91027,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1792021277.9766269,
-    "https://www.kaika.com.au/series/one-piece/": 1792021280.3555453,
-    "https://www.m-g.com.au/pre-orders/": 1792021287.9147797,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1792021269.8926525,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1792021271.549543
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1792028986.5169032,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1792028994.8963296,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1792028978.006253,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1792028993.2452576,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1792028996.8790376,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1792028991.5296538,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1792028997.0691545,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1792028989.8527868,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1792028979.6789553,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1792028982.6728532,
+    "https://www.kaika.com.au/series/one-piece/": 1792028984.8045177,
+    "https://www.m-g.com.au/pre-orders/": 1792028991.921179,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1792028974.599593,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1792028976.2275038
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2373,6 +2375,16 @@
       "state": "unavailable"
     },
     "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/series/one-piece/?pr=600-0&rf=pr": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/series/one-piece/?pr=600-700&rf=pr": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/series/one-piece/?pr=700-0&rf=pr": {
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
