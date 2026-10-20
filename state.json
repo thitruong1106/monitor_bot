@@ -415,6 +415,10 @@
       "https://www.m-g.com.au/product/codenames-critical-role-adventures/",
       "https://www.m-g.com.au/product/company-of-heroes-2nd-edition-core-set/",
       "https://www.m-g.com.au/product/container-more-containers-expansion/",
+      "https://www.m-g.com.au/product/cyberpunk-tcg-welcome-to-night-city-booster-box/",
+      "https://www.m-g.com.au/product/cyberpunk-tcg-welcome-to-night-city-booster-single/",
+      "https://www.m-g.com.au/product/cyberpunk-tcg-welcome-to-night-city-starter-deck-embracing-power/",
+      "https://www.m-g.com.au/product/cyberpunk-tcg-welcome-to-night-city-starter-deck-the-heist/",
       "https://www.m-g.com.au/product/dd-beadle-grimms-dungeon-masters-guide-premium-map-collection/",
       "https://www.m-g.com.au/product/dd-decision-d20-mega-die-mdg/",
       "https://www.m-g.com.au/product/dd-reference-cards-magic-items-common-and-uncommon/",
@@ -442,6 +446,8 @@
       "https://www.m-g.com.au/product/munchkin-second-edition/",
       "https://www.m-g.com.au/product/one-piece-card-game-set-sail-deck-set-sd-01/",
       "https://www.m-g.com.au/product/play-ball/",
+      "https://www.m-g.com.au/product/pokemon-delta-reign-booster-box/",
+      "https://www.m-g.com.au/product/pokemon-delta-reign-booster-single/",
       "https://www.m-g.com.au/product/radlands-essentials-complete-edition/",
       "https://www.m-g.com.au/product/root-the-homeland-expansion/",
       "https://www.m-g.com.au/product/santorini-god-pack-hiding-in-the-underworld/",
@@ -510,20 +516,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1792456217.6214774,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1792456231.9932613,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1792456209.708908,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1792456230.2959137,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1792456234.1689954,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1792456222.8944519,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1792456234.5271745,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1792456221.00194,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1792456211.4168773,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1792456214.4555013,
-    "https://www.kaika.com.au/series/one-piece/": 1792456215.8253624,
-    "https://www.m-g.com.au/pre-orders/": 1792456228.9925466,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1792456206.175517,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1792456207.8874629
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1792472855.2251902,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1792472867.4961185,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1792472846.9567122,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1792472865.850764,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1792472869.7195652,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1792472860.3369422,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1792472869.903186,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1792472858.6258042,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1792472848.6118984,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1792472851.6677155,
+    "https://www.kaika.com.au/series/one-piece/": 1792472853.5124683,
+    "https://www.m-g.com.au/pre-orders/": 1792472864.9868004,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1792472843.5058312,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1792472845.1427162
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2486,6 +2492,26 @@
       "is_preorder": false,
       "state": "unavailable"
     },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/cyberpunk-tcg-welcome-to-night-city-booster-box/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/cyberpunk-tcg-welcome-to-night-city-booster-single/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/cyberpunk-tcg-welcome-to-night-city-starter-deck-embracing-power/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/cyberpunk-tcg-welcome-to-night-city-starter-deck-the-heist/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/dd-beadle-grimms-dungeon-masters-guide-premium-map-collection/": {
       "available": true,
       "is_preorder": true,
@@ -2620,6 +2646,16 @@
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/pokemon-delta-reign-booster-box/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/pokemon-delta-reign-booster-single/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/radlands-essentials-complete-edition/": {
       "available": true,
