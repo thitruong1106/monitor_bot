@@ -35,6 +35,7 @@
       "https://eetcg.com.au/products/one-piece-card-game-booster-display-op-18-release-date-20-nov-2026",
       "https://eetcg.com.au/products/one-piece-card-game-booster-display-tba-op-17",
       "https://eetcg.com.au/products/one-piece-card-game-booster-display-tba-op-19",
+      "https://eetcg.com.au/products/one-piece-card-game-booster-display-tba-op-20",
       "https://eetcg.com.au/products/one-piece-card-game-double-pack-display-dp-12-release-date-28-aug-2026",
       "https://eetcg.com.au/products/one-piece-card-game-extra-booster-display-eb-06",
       "https://eetcg.com.au/products/one-piece-card-game-extra-booster-display-tba-eb-05",
@@ -519,20 +520,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1793234402.2084668,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1793234410.7752347,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1793234392.8810177,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1793234409.0900967,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1793234412.8043644,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1793234407.367814,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1793234413.1034276,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1793234405.583478,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1793234394.5641325,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1793234397.725109,
-    "https://www.kaika.com.au/series/one-piece/": 1793234400.3233347,
-    "https://www.m-g.com.au/pre-orders/": 1793234408.0679083,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1793234389.4586842,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1793234391.1675212
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1793255139.87667,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1793255148.0941803,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1793255131.9145215,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1793255146.4867601,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1793255150.2747579,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1793255144.9931526,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1793255150.5445106,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1793255143.2753832,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1793255133.6927478,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1793255136.6731136,
+    "https://www.kaika.com.au/series/one-piece/": 1793255138.1887732,
+    "https://www.m-g.com.au/pre-orders/": 1793255145.5983586,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1793255128.4741654,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1793255130.0940325
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -695,6 +696,11 @@
       "is_preorder": false,
       "state": "unavailable"
     },
+    "https://eetcg.com.au/collections/one-piece-card-game||https://eetcg.com.au/products/one-piece-card-game-booster-display-tba-op-20": {
+      "available": false,
+      "is_preorder": false,
+      "state": "unavailable"
+    },
     "https://eetcg.com.au/collections/one-piece-card-game||https://eetcg.com.au/products/one-piece-card-game-double-pack-display-dp-12-release-date-28-aug-2026": {
       "available": false,
       "is_preorder": false,
@@ -756,9 +762,9 @@
       "state": "unavailable"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-eb-05-booster-box": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-learn-together-deck-set-lt-01": {
       "available": false,
@@ -1506,9 +1512,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-extra-booster-box-eb-03-japanese": {
-      "available": false,
+      "available": true,
       "is_preorder": false,
-      "state": "unavailable"
+      "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-flanked-by-legends-op-06-booster-box": {
       "available": true,
@@ -1756,9 +1762,9 @@
       "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-extra-booster-box-eb-03-japanese": {
-      "available": false,
+      "available": true,
       "is_preorder": false,
-      "state": "unavailable"
+      "state": "in_stock"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-flanked-by-legends-op-06-booster-box": {
       "available": true,
