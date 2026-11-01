@@ -377,6 +377,7 @@
       "https://www.goodgames.com.au/products/clementoni-puzzle-hqc-anime-cube-dragonball-500-piece-puzzle-2",
       "https://www.goodgames.com.au/products/japanese-one-piece-tcg-eb-04-egghead-crisis-booster-pack",
       "https://www.goodgames.com.au/products/one-piece-card-game-double-pack-dp-11",
+      "https://www.goodgames.com.au/products/one-piece-card-game-limited-card-case-monkey-d-luffy-op-exclusive",
       "https://www.goodgames.com.au/products/one-piece-card-game-official-sleeves-set-7-whitebeard",
       "https://www.goodgames.com.au/products/one-piece-card-game-playmat-and-storage-box-set-monkeydluffy",
       "https://www.goodgames.com.au/products/one-piece-card-game-special-goods-set-former-four-emperors",
@@ -520,20 +521,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1793558062.1162782,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1793558069.9053643,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1793558046.858486,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1793558068.2777498,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1793558071.7358553,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1793558067.1028295,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1793558071.931876,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1793558065.4503763,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1793558048.5096507,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1793558057.8049061,
-    "https://www.kaika.com.au/series/one-piece/": 1793558060.3701186,
-    "https://www.m-g.com.au/pre-orders/": 1793558067.5243342,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1793558043.3855982,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1793558045.0436513
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1793571450.5389197,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1793571459.1113887,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1793571435.2856796,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1793571457.4547122,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1793571461.0844176,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1793571455.6599014,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1793571461.2492013,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1793571453.9604845,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1793571436.9579003,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1793571446.2194893,
+    "https://www.kaika.com.au/series/one-piece/": 1793571448.832375,
+    "https://www.m-g.com.au/pre-orders/": 1793571456.4831245,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1793571431.883509,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1793571433.503032
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2322,6 +2323,11 @@
       "state": "in_stock"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-card-game-double-pack-dp-11": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-card-game-limited-card-case-monkey-d-luffy-op-exclusive": {
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
