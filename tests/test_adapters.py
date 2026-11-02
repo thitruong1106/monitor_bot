@@ -250,3 +250,160 @@ def test_generic_html_product_url_is_absolute():
     results = generic_html.fetch_page("https://shop.com/collection/one-piece", session)
     for r in results:
         assert r["product_url"].startswith("https://")
+
+
+# ── Fix 3: Kaika (Neto storefront) ───────────────────────────────────────────
+#
+# What state.json showed for the Kaika watch: nine "products" whose URLs were
+# https://www.kaika.com.au/series/one-piece/?pr=0-100&rf=pr, ?pr=100-200&rf=pr,
+# ... i.e. the price-range filter links in the sidebar, all "unavailable".
+
+_KAIKA_PAGE_URL = "https://www.kaika.com.au/series/one-piece/"
+
+_KAIKA_PRICE_SIDEBAR = """
+<div class="sidebar">
+  <h4>Price</h4>
+  <ul class="list-unstyled">
+    <li><a href="/series/one-piece/?pr=0-100&amp;rf=pr">$0 - $100</a></li>
+    <li><a href="/series/one-piece/?pr=100-200&amp;rf=pr">$100 - $200</a></li>
+    <li><a href="/series/one-piece/?pr=200-300&amp;rf=pr">$200 - $300</a></li>
+    <li><a href="/series/one-piece/?pr=300-400&amp;rf=pr">$300 - $400</a></li>
+    <li><a href="/series/one-piece/?pr=400-500&amp;rf=pr">$400 - $500</a></li>
+    <li><a href="/series/one-piece/?pr=500-600&amp;rf=pr">$500 - $600</a></li>
+    <li><a href="/series/one-piece/?pr=600-700&amp;rf=pr">$600 - $700</a></li>
+    <li><a href="/series/one-piece/?pr=600-0&amp;rf=pr">$600 +</a></li>
+    <li><a href="/series/one-piece/?pr=700-0&amp;rf=pr">$700 +</a></li>
+  </ul>
+</div>
+"""
+
+
+def _neto_card(slug: str, title: str, price: str, availability: str, button: str) -> str:
+    return f"""
+<div class="thumbnail" itemscope itemtype="http://schema.org/Product">
+  <a href="/{slug}" itemprop="url"><img itemprop="image" src="/x.jpg" alt=""></a>
+  <div class="caption">
+    <h3 itemprop="name"><a href="/{slug}">{title}</a></h3>
+    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+      <span class="productprice" itemprop="price" content="{price}">${price}</span>
+      <meta itemprop="priceCurrency" content="AUD">
+      <link itemprop="availability" href="http://schema.org/{availability}">
+    </div>
+    {button}
+  </div>
+</div>
+"""
+
+
+_KAIKA_PAGE_1 = "<html><body>" + _KAIKA_PRICE_SIDEBAR + _neto_card(
+    "op-12-booster-box", "One Piece OP-12 Booster Box", "149.00", "InStock",
+    '<button class="btn addtocart">Add to Cart</button>',
+) + _neto_card(
+    "op-11-booster-box", "One Piece OP-11 Booster Box", "139.00", "OutOfStock",
+    '<span class="label">Out of Stock</span>',
+) + _neto_card(
+    "op-13-booster-box", "One Piece OP-13 Booster Box (Pre-Order)", "159.00", "PreOrder",
+    '<button class="btn addtocart">Pre-Order</button>',
+) + '<a rel="next" href="/series/one-piece/?pgnum=2">Next</a></body></html>'
+
+_KAIKA_PAGE_2 = "<html><body>" + _KAIKA_PRICE_SIDEBAR + _neto_card(
+    "op-10-booster-box", "One Piece OP-10 Booster Box", "129.00", "InStock",
+    '<button class="btn addtocart">Add to Cart</button>',
+) + "</body></html>"
+
+
+def _kaika_session(pages: dict[str, str]) -> MagicMock:
+    def get(url, **kwargs):
+        resp = MagicMock()
+        resp.status_code = 200
+        resp.text = pages[url]
+        resp.raise_for_status = MagicMock()
+        return resp
+    session = MagicMock()
+    session.get.side_effect = get
+    return session
+
+
+def test_old_bug_price_filter_links_are_no_longer_parsed_as_products():
+    """The generic fallback must not turn the nine price buckets into products."""
+    html = "<html><body>" + _KAIKA_PRICE_SIDEBAR + "</body></html>"
+    results = generic_html._parse_page(html, _KAIKA_PAGE_URL)
+    assert results == []
+
+
+def test_is_facet_link_recognises_neto_refine_and_self_links():
+    assert generic_html._is_facet_link("https://www.kaika.com.au/series/one-piece/?pr=0-100&rf=pr", _KAIKA_PAGE_URL)
+    assert generic_html._is_facet_link("https://www.kaika.com.au/series/one-piece?pgnum=2", _KAIKA_PAGE_URL)
+    assert not generic_html._is_facet_link("https://www.kaika.com.au/op-12-booster-box", _KAIKA_PAGE_URL)
+    assert not generic_html._is_facet_link("https://www.kaika.com.au/products/op-12?variant=1", _KAIKA_PAGE_URL)
+
+
+def test_kaika_adapter_reads_microdata_availability_price_and_follows_pagination():
+    session = _kaika_session({
+        _KAIKA_PAGE_URL: _KAIKA_PAGE_1,
+        "https://www.kaika.com.au/series/one-piece/?pgnum=2": _KAIKA_PAGE_2,
+    })
+    results = generic_html.fetch(_KAIKA_PAGE_URL, session)
+    by_url = {r["product_url"]: r for r in results}
+
+    assert set(by_url) == {
+        "https://www.kaika.com.au/op-12-booster-box",
+        "https://www.kaika.com.au/op-11-booster-box",
+        "https://www.kaika.com.au/op-13-booster-box",
+        "https://www.kaika.com.au/op-10-booster-box",
+    }
+    assert not any("rf=pr" in u for u in by_url)
+
+    op12 = by_url["https://www.kaika.com.au/op-12-booster-box"]
+    assert op12["title"] == "One Piece OP-12 Booster Box"
+    assert op12["available"] is True and op12["is_preorder"] is False
+    assert op12["price"] == "$149.00"
+
+    op11 = by_url["https://www.kaika.com.au/op-11-booster-box"]
+    assert op11["available"] is False
+
+    op13 = by_url["https://www.kaika.com.au/op-13-booster-box"]
+    assert op13["available"] is True and op13["is_preorder"] is True
+
+    assert by_url["https://www.kaika.com.au/op-10-booster-box"]["available"] is True
+    assert session.get.call_count == 2
+
+
+def test_kaika_adapter_stops_when_no_next_link():
+    session = _kaika_session({_KAIKA_PAGE_URL: _KAIKA_PAGE_2})
+    results = generic_html.fetch(_KAIKA_PAGE_URL, session)
+    assert len(results) == 1
+    assert session.get.call_count == 1
+
+
+def test_kaika_adapter_returns_empty_not_junk_when_markup_unrecognised():
+    """If the real page has neither microdata nor product cards, report 0 so the
+    failure alert fires once, instead of 9 phantom unavailable products."""
+    html = "<html><body>" + _KAIKA_PRICE_SIDEBAR + "<p>Nothing here</p></body></html>"
+    session = _kaika_session({_KAIKA_PAGE_URL: html})
+    assert generic_html.fetch(_KAIKA_PAGE_URL, session) == []
+
+
+def test_microdata_availability_without_schema_link_falls_back_to_text():
+    html = """<html><body>
+    <div itemscope itemtype="https://schema.org/Product">
+      <a href="/thing" itemprop="url">Thing</a><span itemprop="name">Thing</span>
+      <span>$10.00</span><button>Add to Cart</button>
+    </div>
+    <div itemscope itemtype="https://schema.org/Product">
+      <a href="/other" itemprop="url">Other</a><span itemprop="name">Other</span>
+      <span>$12.00</span><span>Sold Out</span>
+    </div></body></html>"""
+    soup = generic_html.BeautifulSoup(html, "html.parser")
+    results = {r["product_url"]: r for r in generic_html._parse_microdata_products(soup, "https://s.com/cat/")}
+    assert results["https://s.com/thing"]["available"] is True
+    assert results["https://s.com/thing"]["price"] == "$10.00"
+    assert results["https://s.com/other"]["available"] is False
+
+
+def test_generic_fallback_still_parses_real_cards_next_to_a_facet_sidebar():
+    """Other generic-adapter sites (M-G, NJ) keep working; only facet links are dropped."""
+    html = "<html><body>" + _KAIKA_PRICE_SIDEBAR + _SAMPLE_HTML + "</body></html>"
+    results = generic_html._parse_page(html, "https://shop.com/collection/one-piece")
+    urls = {r["product_url"] for r in results}
+    assert urls == {"https://shop.com/products/booster-a", "https://shop.com/products/booster-b"}

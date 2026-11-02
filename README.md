@@ -10,6 +10,9 @@ Monitors Australian TCG retailer pages for new products and restocks, posts aler
 - For non-Shopify stores it scrapes HTML using `beautifulsoup4`.
 - State (which products exist, their availability) is saved to `state.json` and committed back to the repo after each run.
 - Alerts fire only on **transitions** — available→unavailable changes do not alert; only unavailable→available (or new product appearance) do.
+- If two watches on the same retailer report the same product in one pass (for example the same collection with and without a filter), it is posted **once**.
+- Every alert that is posted is also appended to `alerts.jsonl` (time, retailer, kind, title, price, url). The file keeps the most recent 500 rows and is committed alongside `state.json`.
+- When a watch starts failing (fetch error, 404, or 0 products parsed) one warning goes to the `_fallback` webhook. Nothing more is posted until it works again, when one "Watch Recovered" message is sent. The streak is tracked under `failures` in `state.json`.
 
 ---
 
@@ -158,7 +161,7 @@ When `python manage.py test <url>` shows 0 products or clearly wrong results, wr
 
 | Retailer       | Domain                  | Notes                                    |
 |----------------|-------------------------|------------------------------------------|
-| Kaika          | kaika.com.au            | Generic adapter — test before deploying  |
+| Kaika          | kaika.com.au            | Neto storefront; custom adapter reads schema.org product microdata and follows pagination. Not verified against the live site yet — see PR notes |
 | Gamers Room    | gamersroom.com.au       | Generic adapter — custom may be needed   |
 | M-G            | m-g.com.au              | Pre-orders page, all games mixed in      |
 | NJ Collectables | njcollectables.com.au  | Generic adapter                          |
@@ -174,6 +177,8 @@ Run `python manage.py test <url>` against each one and check the output before t
 | `watches.yaml`     | Committed watchlist                      |
 | `webhooks.json`    | Gitignored; local webhook config         |
 | `state.json`       | Machine-managed; committed by bot        |
+| `alerts.jsonl`     | Machine-managed; last 500 alerts posted  |
+| `alert_log.py`     | Appends to and trims `alerts.jsonl`      |
 | `watcher.py`       | Main entry point                         |
 | `manage.py`        | CLI watchlist manager                    |
 | `config.py`        | Loads watches.yaml + webhooks            |
@@ -192,7 +197,7 @@ Run `python manage.py test <url>` against each one and check the output before t
 
 **"0 products found" warning**
 - Run `python manage.py test <url>` to debug the adapter.
-- The site may need a custom adapter — you'll also get a Discord alert to the `_fallback` webhook.
+- The site may need a custom adapter — you'll also get one Discord alert to the `_fallback` webhook when the watch starts failing, and one more when it recovers.
 
 **State keeps resetting**
 - Make sure the workflow has `contents: write` permission and the commit step is not skipped.

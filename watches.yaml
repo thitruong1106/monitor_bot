@@ -58,12 +58,6 @@
   tier: normal
   type: category
   retailer_name: EE TCG
-- url: https://gamesportal.com.au/collections/one-piece-card-game/Preorder
-  game: one-piece
-  tier: normal
-  type: category
-  retailer_name: Games Portal (Preorder)
-
 - url: https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock
   game: one-piece
   tier: normal

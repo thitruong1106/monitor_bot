@@ -87,7 +87,11 @@ def send_adapter_failure_alert(
     webhook_url: str,
     session: requests.Session,
 ) -> None:
-    """One-time alert when an adapter can't parse a site."""
+    """
+    Posted once when a watch STARTS failing (fetch error, 404, or 0 products
+    parsed). The watcher tracks the failure in state.json and will not post
+    again until the watch recovers, at which point send_watch_recovered_alert fires.
+    """
     embed = {
         "title": "⚠️ Adapter Parse Failure",
         "color": 0xED4245,  # red
@@ -96,8 +100,12 @@ def send_adapter_failure_alert(
             {"name": "URL", "value": watch_url, "inline": False},
             {"name": "Error", "value": error[:1000], "inline": False},
             {
-                "name": "Action needed",
-                "value": "Write a custom adapter for this domain in `adapters/generic_html.py`.",
+                "name": "What happens next",
+                "value": (
+                    "This watch keeps being retried every pass but you won't hear about it "
+                    "again until it recovers. If it stays broken, check the URL or write a "
+                    "custom adapter for this domain in `adapters/generic_html.py`."
+                ),
                 "inline": False,
             },
         ],
@@ -109,3 +117,43 @@ def send_adapter_failure_alert(
             logger.warning("Adapter failure alert responded %d", resp.status_code)
     except Exception as exc:
         logger.error("Failed to send adapter failure alert: %s", exc)
+
+
+def _format_duration(seconds: float) -> str:
+    seconds = max(0, int(seconds))
+    if seconds < 3600:
+        return f"{max(1, seconds // 60)} min"
+    if seconds < 86400:
+        return f"{seconds / 3600:.1f} h"
+    return f"{seconds / 86400:.1f} days"
+
+
+def send_watch_recovered_alert(
+    watch_url: str,
+    retailer_name: str,
+    failure: dict,
+    webhook_url: str,
+    session: requests.Session,
+) -> None:
+    """One-time alert when a previously failing watch fetches and parses again."""
+    since = float(failure.get("since") or 0.0)
+    last_seen = float(failure.get("last_seen") or since)
+    count = int(failure.get("count") or 0)
+    embed = {
+        "title": "✅ Watch Recovered",
+        "color": 0x57F287,  # green
+        "fields": [
+            {"name": "Retailer", "value": retailer_name, "inline": True},
+            {"name": "Failed passes", "value": str(count), "inline": True},
+            {"name": "Down for", "value": _format_duration(last_seen - since), "inline": True},
+            {"name": "URL", "value": watch_url, "inline": False},
+            {"name": "Last error", "value": str(failure.get("last_error", ""))[:1000] or "n/a", "inline": False},
+        ],
+    }
+    payload = {"embeds": [embed]}
+    try:
+        resp = session.post(webhook_url, json=payload, timeout=15)
+        if resp.status_code != 204:
+            logger.warning("Watch recovered alert responded %d", resp.status_code)
+    except Exception as exc:
+        logger.error("Failed to send watch recovered alert: %s", exc)
