@@ -1533,7 +1533,11 @@
       "https://www.m-g.com.au/product/santorini-god-pack-seasons-of-chaos/",
       "https://www.m-g.com.au/product/santorini-god-pack-soaring-over-mount-olympus/",
       "https://www.m-g.com.au/product/schadenfreude/",
-      "https://www.m-g.com.au/product/sirius-dice-dd-mists-of-ravenloft-treasure-packs-blind-box-single/"
+      "https://www.m-g.com.au/product/sirius-dice-dd-mists-of-ravenloft-treasure-packs-blind-box-single/",
+      "https://www.m-g.com.au/product/some-assembly-required/",
+      "https://www.m-g.com.au/product/star-trek-space-hunt/",
+      "https://www.m-g.com.au/product/that-dicey-word-game/",
+      "https://www.m-g.com.au/product/unmatched-stars-and-stripes/"
     ],
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": [
       "https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english",
@@ -1594,20 +1598,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1793606525.4823804,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1793606533.9152565,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1793606510.6106157,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1793606532.2784293,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1793606536.0339541,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1793606530.5420096,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1793606536.1346686,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1793606528.864224,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1793606512.8896468,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1793606521.6180365,
-    "https://www.kaika.com.au/series/one-piece/": 1793606523.7904272,
-    "https://www.m-g.com.au/pre-orders/": 1793606531.2270272,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1793606507.1631339,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1793606508.7764354
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1793642544.1932223,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1793642552.58359,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1793642530.454558,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1793642550.9455757,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1793642554.8218486,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1793642549.294174,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1793642555.0865834,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1793642547.5467176,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1793642532.1073265,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1793642541.3815987,
+    "https://www.kaika.com.au/series/one-piece/": 1793642542.4772484,
+    "https://www.m-g.com.au/pre-orders/": 1793642549.9053829,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1793642526.9141736,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1793642528.5950952
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -9164,6 +9168,26 @@
       "available": false,
       "is_preorder": false,
       "state": "unavailable"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/some-assembly-required/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/star-trek-space-hunt/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/that-dicey-word-game/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/unmatched-stars-and-stripes/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
     },
     "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case||https://www.tcgroupau.com.au/products/bandai-one-piece-card-game-500-years-in-the-future-op-07-booster-box-english": {
       "available": false,
