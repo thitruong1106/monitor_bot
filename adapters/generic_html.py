@@ -1,7 +1,7 @@
 """Generic HTML adapter for non-Shopify stores."""
 import logging
 import re
-from urllib.parse import urljoin, urlparse
+from urllib.parse import parse_qs, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -28,9 +28,32 @@ PREORDER_PATTERNS = re.compile(
 PRICE_PATTERNS = re.compile(r"\$\s*[\d,]+\.?\d*")
 
 
+# Query-string keys that only ever appear on listing/refine links, never on a
+# product page (Neto/Maropost: rf=pr for price buckets, pgnum for pagination).
+FACET_QUERY_KEYS = {"rf", "pr", "pgnum"}
+
+
 def _extract_price(text: str) -> str | None:
     m = PRICE_PATTERNS.search(text)
     return m.group(0).replace(" ", "") if m else None
+
+
+def _is_facet_link(product_url: str, page_url: str) -> bool:
+    """
+    True when a link is a filter/sort/pagination link back to the listing page
+    rather than a product. Those links carry a price in their text
+    ("$0 - $100") so the price-based fallback used to mistake them for products.
+    """
+    pu = urlparse(product_url)
+    pg = urlparse(page_url)
+    same_page = (
+        pu.netloc.lower() == pg.netloc.lower()
+        and pu.path.rstrip("/") == pg.path.rstrip("/")
+    )
+    if same_page:
+        return True
+    keys = {k.lower() for k in parse_qs(pu.query, keep_blank_values=True)}
+    return bool(keys & FACET_QUERY_KEYS)
 
 
 def _parse_product_card(card, base_url: str) -> dict | None:
@@ -103,11 +126,108 @@ def _parse_page(html: str, page_url: str) -> list[dict]:
 
     for card in cards:
         result = _parse_product_card(card, base_url)
-        if result and result["product_url"] not in seen_urls:
-            seen_urls.add(result["product_url"])
-            products.append(result)
+        if not result or result["product_url"] in seen_urls:
+            continue
+        if _is_facet_link(result["product_url"], page_url):
+            logger.debug("Ignoring facet/filter link %s", result["product_url"])
+            continue
+        seen_urls.add(result["product_url"])
+        products.append(result)
 
     return products
+
+
+# ── schema.org microdata (Neto / Maropost and many other themes) ─────────────
+
+_AVAILABLE_SCHEMA = ("instock", "preorder", "presale", "limitedavailability", "onlineonly", "instoreonly", "backorder")
+_UNAVAILABLE_SCHEMA = ("outofstock", "soldout", "discontinued")
+
+
+def _itemprop_text(node, prop: str) -> str | None:
+    el = node.find(attrs={"itemprop": prop})
+    if el is None:
+        return None
+    for attr in ("content", "href"):
+        if el.has_attr(attr) and el[attr]:
+            return str(el[attr]).strip()
+    return el.get_text(" ", strip=True) or None
+
+
+def _parse_microdata_products(soup, page_url: str) -> list[dict]:
+    """
+    Parse product cards marked up with schema.org/Product microdata.
+    Returns [] when the page has none, so callers can fall back.
+    """
+    base_url = "{0.scheme}://{0.netloc}".format(urlparse(page_url))
+    nodes = [
+        n for n in soup.find_all(attrs={"itemtype": re.compile(r"schema\.org/Product$", re.I)})
+        # skip Products nested inside another Product (e.g. variants)
+        if n.find_parent(attrs={"itemtype": re.compile(r"schema\.org/Product$", re.I)}) is None
+    ]
+    products: list[dict] = []
+    seen: set[str] = set()
+    for node in nodes:
+        href = _itemprop_text(node, "url")
+        if not href:
+            link = node.find("a", href=True)
+            href = link["href"] if link else None
+        if not href:
+            continue
+        product_url = urljoin(base_url, href)
+        if product_url in seen or _is_facet_link(product_url, page_url):
+            continue
+
+        title = _itemprop_text(node, "name")
+        if not title:
+            heading = node.find(re.compile(r"h[1-6]"))
+            link = node.find("a", href=True)
+            title = (heading.get_text(strip=True) if heading else (link.get_text(strip=True) if link else "")) or "Unknown"
+
+        text = node.get_text(" ", strip=True)
+        availability = (_itemprop_text(node, "availability") or "").lower().replace(" ", "")
+        if any(k in availability for k in _UNAVAILABLE_SCHEMA):
+            available = False
+        elif any(k in availability for k in _AVAILABLE_SCHEMA):
+            available = True
+        else:
+            available = bool(IN_STOCK_PATTERNS.search(text))
+            if OOS_PATTERNS.search(text) and not re.search(r"\badd\s+to\s+cart\b", text, re.I):
+                available = False
+
+        is_preorder = available and (
+            "preorder" in availability or "presale" in availability or bool(PREORDER_PATTERNS.search(text))
+        )
+
+        price = None
+        raw_price = _itemprop_text(node, "price") or _itemprop_text(node, "lowPrice")
+        if raw_price:
+            try:
+                price = f"${float(raw_price.replace('$', '').replace(',', '')):.2f}"
+            except ValueError:
+                price = _extract_price(raw_price)
+        if not price:
+            price = _extract_price(text)
+
+        seen.add(product_url)
+        products.append({
+            "product_url": product_url,
+            "title": title,
+            "available": available,
+            "is_preorder": is_preorder,
+            "price": price,
+        })
+    return products
+
+
+def _next_page_url(soup, page_url: str) -> str | None:
+    """Return the rel=next link if the listing is paginated, else None."""
+    for tag in soup.find_all(["a", "link"], href=True):
+        rel = tag.get("rel") or []
+        if isinstance(rel, str):
+            rel = [rel]
+        if "next" in [r.lower() for r in rel]:
+            return urljoin(page_url, tag["href"])
+    return None
 
 
 def fetch_page(url: str, session: requests.Session) -> list[dict]:
@@ -122,9 +242,51 @@ def fetch_page(url: str, session: requests.Session) -> list[dict]:
 
 # ── Per-domain adapters ──────────────────────────────────────────────────────
 
+KAIKA_MAX_PAGES = 10
+
+
 def _fetch_kaika(url: str, session: requests.Session) -> list[dict]:
-    """kaika.com.au — standard HTML, products in article cards."""
-    return fetch_page(url, session)
+    """
+    kaika.com.au — Neto/Maropost storefront (the "?pr=0-100&rf=pr" links are
+    Neto's price-refine sidebar).
+
+    Why the old approach never alerted: the generic parser found no
+    "product-card"-style elements, fell back to "any <li> with a price and a
+    link", and matched the nine price-range filter links in the sidebar
+    ($0-$100, $100-$200, ...). Those nine "products" had no add-to-cart text,
+    so every one read as unavailable forever.
+
+    Now: parse schema.org/Product microdata (what Neto themes emit per
+    product thumbnail), follow rel=next pagination, and ignore facet links.
+    If no microdata is present we fall back to the generic card parser with
+    facet links excluded; if that finds nothing the watch reports 0 products
+    and the failure alert fires once, instead of silently reporting junk.
+    """
+    products: list[dict] = []
+    seen: set[str] = set()
+    page_url: str | None = url
+    pages = 0
+    used_microdata = False
+    while page_url and pages < KAIKA_MAX_PAGES:
+        pages += 1
+        resp = session.get(page_url)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        batch = _parse_microdata_products(soup, page_url)
+        if batch:
+            used_microdata = True
+        elif pages == 1:
+            batch = _parse_page(resp.text, page_url)
+        for p in batch:
+            if p["product_url"] not in seen:
+                seen.add(p["product_url"])
+                products.append(p)
+        page_url = _next_page_url(soup, page_url) if used_microdata else None
+    logger.info(
+        "Kaika adapter found %d products across %d page(s) via %s",
+        len(products), pages, "microdata" if used_microdata else "generic cards",
+    )
+    return products
 
 
 def _fetch_gamersroom(base_url: str, session: requests.Session) -> list[dict]:

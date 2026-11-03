@@ -37,6 +37,44 @@ def set_last_checked(state: dict, watch_url: str, ts: float | None = None) -> No
     state.setdefault("last_checked", {})[watch_url] = ts if ts is not None else time.time()
 
 
+# ── Watch failure tracking ───────────────────────────────────────────────────
+
+def get_failure(state: dict, watch_url: str) -> dict | None:
+    """Return the active failure record for a watch, or None if it is healthy."""
+    return state.get("failures", {}).get(watch_url)
+
+
+def record_failure(state: dict, watch_url: str, error: str, ts: float | None = None) -> bool:
+    """
+    Mark a watch as failing. Returns True if this is the START of a failure
+    streak (i.e. the caller should alert), False if it was already failing.
+    """
+    now = ts if ts is not None else time.time()
+    failures = state.setdefault("failures", {})
+    existing = failures.get(watch_url)
+    if existing:
+        existing["count"] = int(existing.get("count", 1)) + 1
+        existing["last_error"] = str(error)[:500]
+        existing["last_seen"] = now
+        return False
+    failures[watch_url] = {
+        "since": now,
+        "last_seen": now,
+        "count": 1,
+        "last_error": str(error)[:500],
+    }
+    return True
+
+
+def clear_failure(state: dict, watch_url: str) -> dict | None:
+    """
+    Mark a watch as healthy. Returns the failure record that was cleared
+    (so the caller can send a recovery alert), or None if it wasn't failing.
+    """
+    failures = state.get("failures", {})
+    return failures.pop(watch_url, None)
+
+
 # ── Category state ───────────────────────────────────────────────────────────
 
 def get_known_urls(state: dict, watch_url: str) -> set[str]:
