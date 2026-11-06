@@ -18,13 +18,22 @@ def _domain(url: str) -> str:
     return urlparse(url).netloc.lower()
 
 
-def get_adapter(url: str, session: requests.Session | None = None):
+def get_adapter(url: str, session: requests.Session | None = None, platform: str | None = None):
     """
-    Return (adapter_module, fetch_fn) for the given URL.
+    Return the fetch function for the given URL: fetch_fn(url, session) -> list[dict].
 
-    Returns a callable: fetch_fn(url, session) -> list[dict]
+    `platform` comes from watches.yaml ("shopify" or "other"). When it is set
+    no probe request is made; when it is missing the domain is probed once per
+    process (the old behaviour).
     """
     host = _domain(url)
+
+    if platform == "shopify":
+        _KNOWN_SHOPIFY_DOMAINS.add(host)
+        return _shopify_fn(url)
+    if platform == "other":
+        _KNOWN_NON_SHOPIFY_DOMAINS.add(host)
+        return generic_html.fetch
 
     # Check known caches first
     if host in _KNOWN_SHOPIFY_DOMAINS:
@@ -54,7 +63,10 @@ def get_adapter(url: str, session: requests.Session | None = None):
 
 def _shopify_fn(url: str):
     """Return the right Shopify fetch fn based on URL path."""
-    if "/collections/" in url:
+    path = urlparse(url).path
+    if "/products/" in path:
+        return shopify.fetch_product
+    if "/collections/" in path:
         return shopify.fetch_collection
     return shopify.fetch_product
 

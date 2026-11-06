@@ -56,6 +56,23 @@ def _is_facet_link(product_url: str, page_url: str) -> bool:
     return bool(keys & FACET_QUERY_KEYS)
 
 
+def _img_src(node, base_url: str) -> str | None:
+    """Best image URL inside a card: lazy-load attributes first, then src."""
+    img = node.find("img")
+    if img is None:
+        return None
+    for attr in ("data-src", "data-original", "data-lazy", "src"):
+        val = img.get(attr)
+        if val and not str(val).startswith("data:"):
+            return urljoin(base_url, str(val).strip())
+    srcset = img.get("srcset") or img.get("data-srcset")
+    if srcset:
+        first = str(srcset).split(",")[0].strip().split(" ")[0]
+        if first:
+            return urljoin(base_url, first)
+    return None
+
+
 def _parse_product_card(card, base_url: str) -> dict | None:
     """Try to extract product info from a generic card/article/li element."""
     text = card.get_text(" ", strip=True)
@@ -79,13 +96,17 @@ def _parse_product_card(card, base_url: str) -> dict | None:
 
     price = _extract_price(text)
 
-    return {
+    result = {
         "product_url": product_url,
         "title": title,
         "available": available,
         "is_preorder": is_preorder,
         "price": price,
     }
+    image = _img_src(card, base_url)
+    if image:
+        result["image_url"] = image
+    return result
 
 
 def _parse_page(html: str, page_url: str) -> list[dict]:
@@ -147,7 +168,7 @@ def _itemprop_text(node, prop: str) -> str | None:
     el = node.find(attrs={"itemprop": prop})
     if el is None:
         return None
-    for attr in ("content", "href"):
+    for attr in ("content", "href", "src", "data-src"):
         if el.has_attr(attr) and el[attr]:
             return str(el[attr]).strip()
     return el.get_text(" ", strip=True) or None
@@ -209,13 +230,18 @@ def _parse_microdata_products(soup, page_url: str) -> list[dict]:
             price = _extract_price(text)
 
         seen.add(product_url)
-        products.append({
+        item = {
             "product_url": product_url,
             "title": title,
             "available": available,
             "is_preorder": is_preorder,
             "price": price,
-        })
+        }
+        image = _itemprop_text(node, "image")
+        image = urljoin(base_url, image) if image else _img_src(node, base_url)
+        if image:
+            item["image_url"] = image
+        products.append(item)
     return products
 
 

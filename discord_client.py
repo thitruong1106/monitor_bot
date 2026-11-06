@@ -1,5 +1,6 @@
 """Discord alert formatting and webhook delivery."""
 import logging
+from datetime import datetime, timezone
 from typing import Any
 
 import requests
@@ -21,6 +22,10 @@ ALERT_COLORS = {
 }
 
 
+def _now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
 def build_embed(alert: dict, retailer_name: str) -> dict:
     """Build a single Discord embed dict for one alert."""
     alert_type = alert.get("alert_type", "NEW_LISTING")
@@ -31,22 +36,37 @@ def build_embed(alert: dict, retailer_name: str) -> dict:
     url = alert.get("product_url", "")
     price = alert.get("price") or "Price unknown"
 
+    fields = [
+        {"name": "Retailer", "value": retailer_name, "inline": True},
+        {"name": "Price", "value": price, "inline": True},
+    ]
+    links = []
+    if alert.get("cart_url"):
+        links.append(f"[Add to cart]({alert['cart_url']})")
+    if alert.get("checkout_url"):
+        links.append(f"[Straight to checkout]({alert['checkout_url']})")
+    if links:
+        fields.append({"name": "Quick buy", "value": " · ".join(links), "inline": False})
+
     embed: dict[str, Any] = {
-        "title": title,
+        "title": title[:256],
         "url": url,
         "color": color,
-        "fields": [
-            {"name": "Retailer", "value": retailer_name, "inline": True},
-            {"name": "Price", "value": price, "inline": True},
-        ],
+        "fields": fields,
+        "timestamp": _now_iso(),
     }
+    if alert.get("image_url"):
+        embed["thumbnail"] = {"url": alert["image_url"]}
     return embed
 
 
-def build_messages(alerts: list[dict], retailer_name: str) -> list[dict]:
+def build_messages(alerts: list[dict], retailer_name: str, role_id: str | None = None) -> list[dict]:
     """
     Group alerts into Discord webhook payloads (max 10 embeds each).
     Returns a list of payload dicts ready to POST.
+
+    With a role_id, the FIRST payload pings that role (one ping per retailer
+    batch). allowed_mentions is always set so nothing else can ever ping.
     """
     if not alerts:
         return []
@@ -55,7 +75,11 @@ def build_messages(alerts: list[dict], retailer_name: str) -> list[dict]:
     for i in range(0, len(alerts), DISCORD_MAX_EMBEDS):
         chunk = alerts[i: i + DISCORD_MAX_EMBEDS]
         embeds = [build_embed(a, retailer_name) for a in chunk]
-        payloads.append({"embeds": embeds})
+        payload: dict[str, Any] = {"embeds": embeds, "allowed_mentions": {"parse": []}}
+        if role_id and i == 0:
+            payload["content"] = f"<@&{role_id}>"
+            payload["allowed_mentions"] = {"parse": [], "roles": [role_id]}
+        payloads.append(payload)
     return payloads
 
 
@@ -64,9 +88,10 @@ def send_alerts(
     retailer_name: str,
     webhook_url: str,
     session: requests.Session,
+    role_id: str | None = None,
 ) -> None:
     """Post one or more Discord messages for the given alerts."""
-    payloads = build_messages(alerts, retailer_name)
+    payloads = build_messages(alerts, retailer_name, role_id=role_id)
     for payload in payloads:
         try:
             resp = session.post(webhook_url, json=payload, timeout=15)
@@ -86,14 +111,16 @@ def send_adapter_failure_alert(
     error: str,
     webhook_url: str,
     session: requests.Session,
+    title: str = "⚠️ Adapter Parse Failure",
 ) -> None:
     """
-    Posted once when a watch STARTS failing (fetch error, 404, or 0 products
-    parsed). The watcher tracks the failure in state.json and will not post
-    again until the watch recovers, at which point send_watch_recovered_alert fires.
+    Posted once when a watch STARTS failing (fetch error, 404, 429, or 0
+    products parsed). The watcher tracks the failure in state.json and will not
+    post again until the watch recovers, at which point
+    send_watch_recovered_alert fires.
     """
     embed = {
-        "title": "⚠️ Adapter Parse Failure",
+        "title": title,
         "color": 0xED4245,  # red
         "fields": [
             {"name": "Retailer", "value": retailer_name, "inline": True},
@@ -157,3 +184,38 @@ def send_watch_recovered_alert(
             logger.warning("Watch recovered alert responded %d", resp.status_code)
     except Exception as exc:
         logger.error("Failed to send watch recovered alert: %s", exc)
+
+
+def _hours(seconds: float) -> str:
+    return f"{seconds / 3600:.1f} h" if seconds >= 3600 else f"{max(1, int(seconds // 60))} min"
+
+
+def build_missed_run_embed(warning: dict) -> dict:
+    start = int(warning["gap_start"])
+    end = int(warning["gap_end"])
+    lines = [
+        f"No successful check between <t:{start}:f> and <t:{end}:f> ({_hours(warning['gap_seconds'])}).",
+        "Restocks in that window may have been missed or alerted late.",
+    ]
+    if warning.get("earlier_gaps"):
+        lines.append(
+            f"Also {warning['earlier_gaps']} earlier gap(s) over {int(warning['threshold_minutes'])} min "
+            f"since the last warning; longest {_hours(warning['longest_seconds'])}."
+        )
+    return {
+        "title": "⏰ Watcher fell behind",
+        "color": 0xFEE75C,
+        "description": "\n".join(lines),
+        "timestamp": _now_iso(),
+    }
+
+
+def send_missed_run_alert(warning: dict, webhook_url: str, session: requests.Session) -> None:
+    """Posted when the gap since the last successful pass exceeds the threshold."""
+    payload = {"embeds": [build_missed_run_embed(warning)], "allowed_mentions": {"parse": []}}
+    try:
+        resp = session.post(webhook_url, json=payload, timeout=15)
+        if resp.status_code != 204:
+            logger.warning("Missed-run alert responded %d", resp.status_code)
+    except Exception as exc:
+        logger.error("Failed to send missed-run alert: %s", exc)
