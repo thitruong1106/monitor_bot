@@ -4,12 +4,14 @@
   type: product
   retailer_name: Good Games (OP-18)
   platform: shopify
+  cooldown_hours: 1.0
 - url: https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box
   game: one-piece
   tier: hot
   type: product
   retailer_name: Gameology (OP-18)
   platform: shopify
+  cooldown_hours: 1.0
 - url: https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case
   game: one-piece
   tier: normal

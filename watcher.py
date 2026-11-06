@@ -5,6 +5,7 @@ state dict. `run()` is the cron entry point (GitHub Actions): load state, one
 pass, save. A long-running service can instead build the context once and call
 `run_pass()` every 30-60 s, saving state after each pass.
 """
+import copy
 import logging
 import sys
 import time
@@ -285,6 +286,7 @@ class WatcherContext:
     role_id: str | None = None
     heartbeat_url: str | None = None
     dry_run: bool = False
+    missed_run_alerts: bool = config.MISSED_RUN_ALERTS
     missed_run_minutes: float = config.MISSED_RUN_MINUTES
     missed_run_warn_every_hours: float = config.MISSED_RUN_WARN_EVERY_HOURS
     prune_after_days: float = config.PRUNE_AFTER_DAYS
@@ -305,6 +307,7 @@ def build_context(dry_run: bool = False, watches: list[Watch] | None = None,
         session=_RetrySession(raw_session, throttle),
         throttle=throttle,
         role_id=config.load_role_id(),
+        missed_run_alerts=config._env_flag("MISSED_RUN_ALERTS", False),
         heartbeat_url=config.load_heartbeat_url(),
         dry_run=dry_run,
     )
@@ -330,13 +333,19 @@ def run_pass(ctx: WatcherContext, state: dict, now: float | None = None) -> dict
     summary = {"checked": 0, "skipped_rate_limited": 0, "alerts_sent": 0,
                "suppressed_cooldown": 0, "missed_run_warning": False}
 
-    # 1. Did we fall behind since the last good pass?
-    warning = st.check_missed_run(state, now, ctx.missed_run_minutes, ctx.missed_run_warn_every_hours)
-    if warning:
-        summary["missed_run_warning"] = True
-        logger.warning("No successful pass for %.1f h before this one", warning["gap_seconds"] / 3600)
-        if ctx.fallback_webhook and not ctx.dry_run:
-            discord_client.send_missed_run_alert(warning, ctx.fallback_webhook, ctx.raw_session)
+    # 1. Did we fall behind since the last good pass? (Posting is opt-in.)
+    if ctx.missed_run_alerts:
+        warning = st.check_missed_run(state, now, ctx.missed_run_minutes, ctx.missed_run_warn_every_hours)
+        if warning:
+            summary["missed_run_warning"] = True
+            logger.warning("No successful pass for %.1f h before this one", warning["gap_seconds"] / 3600)
+            if ctx.fallback_webhook and not ctx.dry_run:
+                discord_client.send_missed_run_alert(warning, ctx.fallback_webhook, ctx.raw_session)
+    else:
+        last = state.get("run_health", {}).get("last_success")
+        if last is not None and now - float(last) > ctx.missed_run_minutes * 60:
+            logger.info("Last successful pass was %.1f h ago (MISSED_RUN_ALERTS is off, not posting)",
+                        (now - float(last)) / 3600)
 
     # 2. Check every due watch.
     ctx.throttle.load(st.get_domain_cooldowns(state))
@@ -395,13 +404,18 @@ def run_pass(ctx: WatcherContext, state: dict, now: float | None = None) -> dict
 
 
 def run(dry_run: bool = False) -> None:
-    """Cron entry point: load state, one pass, save."""
+    """Cron entry point: load state, one pass, save. A dry run never writes any file."""
     ctx = build_context(dry_run=dry_run)
     state = st.load_state()
+    if dry_run:
+        logger.info("DRY RUN: state changes below happen on a throwaway copy; "
+                    "state.json and alerts.jsonl will not be written.")
+        run_pass(ctx, copy.deepcopy(state))
+        logger.info("DRY RUN finished: nothing was saved and nothing was posted.")
+        return
     run_pass(ctx, state)
-    if not dry_run:
-        st.save_state(state)
-        logger.info("State saved.")
+    st.save_state(state)
+    logger.info("State saved.")
 
 
 if __name__ == "__main__":

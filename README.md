@@ -19,7 +19,7 @@ Monitors Australian TCG retailer pages for new products and restocks, posts aler
 - Every alert that is posted is also appended to `alerts.jsonl` (time, retailer, kind, title, price, url). The file keeps the most recent 500 rows.
 - When a watch starts failing (fetch error, 404, 429 rate limit, or 0 products parsed) one warning goes to the `_fallback` webhook, and one "Watch Recovered" message when it works again.
 - On HTTP 429 the bot honours `Retry-After` and leaves that whole site alone until it expires (60 s to 1 h).
-- **Missed-run warning:** if more than 30 minutes passed since the last successful run, the next run posts "Watcher fell behind" to `_fallback` (at most once every 6 h, summarising the gaps in between).
+- **Missed-run warning (opt-in):** with `MISSED_RUN_ALERTS=true`, if more than 30 minutes passed since the last successful run, the next run posts "Watcher fell behind" to `_fallback` (at most once every 6 h, summarising the gaps in between). It is off by default because GitHub Actions runs the bot hours late; switch it on after moving to an always-on machine.
 - Product records not seen for 30 days of successful checks, and records of watches removed from `watches.yaml`, are pruned automatically.
 
 ---
@@ -108,7 +108,7 @@ This fetches the URL, prints what the adapter sees, and exits without touching s
 python watcher.py --dry-run
 ```
 
-Processes all due watches, logs what alerts *would* be sent, but does not post to Discord or save state.
+Processes all due watches and logs what alerts *would* be sent. It posts nothing to Discord and never writes `state.json` or `alerts.jsonl`; lines such as "Migrated state" or "Pruned state" describe a throwaway copy.
 
 ### Run the watcher for real
 
@@ -254,7 +254,7 @@ Run `python manage.py test <url>` against each one and check the output before t
 - This shouldn't happen: each watch's first successful check silently populates state. If it does, run `python watcher.py --dry-run` to see which watch produces them.
 
 **"Watcher fell behind" messages**
-- GitHub runs scheduled workflows late when it is busy, often by hours on free private repos. The message tells you the window that was not checked. Moving the bot to an always-on machine is the fix (planned as Phase 2).
+- Only posted when `MISSED_RUN_ALERTS=true`. GitHub runs scheduled workflows late when it is busy, often by hours on free private repos. The message tells you the window that was not checked. Moving the bot to an always-on machine is the fix (planned as Phase 2).
 
 **"Rate Limited" message**
 - A site answered HTTP 429. The bot leaves it alone for the time the site asked for (1 min to 1 h) and posts "Watch Recovered" when it works again. If it keeps happening, move that watch to a slower tier.

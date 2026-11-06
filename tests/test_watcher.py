@@ -305,7 +305,7 @@ def test_alerts_jsonl_is_tracked_in_repo():
 T0 = 1_800_000_000.0
 
 
-def _ctx(watches, dry_run=False, heartbeat_url=None, role_id=None):
+def _ctx(watches, dry_run=False, heartbeat_url=None, role_id=None, missed_run_alerts=False):
     throttle = watcher.DomainThrottle(delay=0, sleep=lambda s: None)
     raw = MagicMock()
     return watcher.WatcherContext(
@@ -317,6 +317,7 @@ def _ctx(watches, dry_run=False, heartbeat_url=None, role_id=None):
         role_id=role_id,
         heartbeat_url=heartbeat_url,
         dry_run=dry_run,
+        missed_run_alerts=missed_run_alerts,
     )
 
 
@@ -393,7 +394,7 @@ def test_missed_run_warning_posted_to_fallback_once(monkeypatch, discord):
     url = "https://shop.com/collections/a"
     _install_adapter(monkeypatch, {url: [_product("https://shop.com/products/1", False)]})
     state = {}
-    ctx = _ctx([_watch(url)])
+    ctx = _ctx([_watch(url)], missed_run_alerts=True)
     watcher.run_pass(ctx, state, now=T0)
     watcher.run_pass(ctx, state, now=T0 + 20 * 60)           # 20 min gap: fine
     assert discord["missed"].call_count == 0
@@ -408,7 +409,7 @@ def test_missed_run_warning_posted_to_fallback_once(monkeypatch, discord):
 
 def test_missed_run_not_posted_in_dry_run(monkeypatch, discord):
     state = {"run_health": {"last_success": T0}}
-    summary = watcher.run_pass(_ctx([], dry_run=True), state, now=T0 + 5 * 3600)
+    summary = watcher.run_pass(_ctx([], dry_run=True, missed_run_alerts=True), state, now=T0 + 5 * 3600)
     assert summary["missed_run_warning"] is True
     assert discord["missed"].call_count == 0
 
@@ -496,3 +497,70 @@ def test_save_watches_round_trips_new_fields(tmp_path):
     again = load_watches(path)
     assert [vars(a) | {"_include_re": None, "_exclude_re": None} for a in again] == \
            [vars(b) | {"_include_re": None, "_exclude_re": None} for b in original]
+
+
+# ── Missed-run alerts are opt-in ─────────────────────────────────────────────
+
+def test_missed_run_alerts_are_off_by_default(monkeypatch, discord):
+    state = {"run_health": {"last_success": T0}}
+    summary = watcher.run_pass(_ctx([]), state, now=T0 + 5 * 3600)
+    assert summary["missed_run_warning"] is False
+    assert discord["missed"].call_count == 0
+    assert state["run_health"]["last_success"] == T0 + 5 * 3600   # still tracked, ready to switch on
+
+
+@pytest.mark.parametrize("value,expected", [
+    (None, False), ("", False), ("false", False), ("0", False), ("off", False),
+    ("true", True), ("1", True), ("YES", True), ("on", True),
+])
+def test_missed_run_alerts_env_flag(monkeypatch, value, expected):
+    if value is None:
+        monkeypatch.delenv("MISSED_RUN_ALERTS", raising=False)
+    else:
+        monkeypatch.setenv("MISSED_RUN_ALERTS", value)
+    assert watcher.build_context(watches=[], webhooks={}).missed_run_alerts is expected
+
+
+# ── Dry run never writes state.json or alerts.jsonl ──────────────────────────
+
+def test_dry_run_leaves_state_and_alerts_files_byte_identical(monkeypatch, discord, files):
+    """
+    The worst case for a dry run: an old-format state.json (so migration runs),
+    a removed watch (so pruning runs), a product flip (so an alert is produced),
+    a failing watch, and a 5 h gap with missed-run alerts switched on.
+    """
+    monkeypatch.setenv("MISSED_RUN_ALERTS", "true")
+    url = "https://shop.com/collections/a"
+    broken = "https://broken.com/collections/b"
+    product = "https://shop.com/products/op18"
+    v1_state = {
+        "category_urls": {url: [product], "https://gone.com/collections/old": ["https://gone.com/products/x"]},
+        "last_checked": {url: T0, "https://gone.com/collections/old": T0},
+        "products": {
+            f"{url}||{product}": {"available": False, "is_preorder": False, "state": "unavailable"},
+            "https://gone.com/collections/old||https://gone.com/products/x": {"available": True, "state": "in_stock"},
+        },
+        "run_health": {"last_success": T0 - 5 * 3600},
+    }
+    state_path = files / "state.json"
+    alerts_path = files / "alerts.jsonl"
+    state_path.write_text(json.dumps(v1_state, indent=2) + "\n", encoding="utf-8")
+    alerts_path.write_text('{"title": "existing row"}\n', encoding="utf-8")
+    state_before = state_path.read_bytes()
+    alerts_before = alerts_path.read_bytes()
+
+    _run_with(monkeypatch, [_watch(url), _watch(broken, "Broken")],
+              {url: [_product(product, True)], broken: RuntimeError("down")}, dry_run=True)
+
+    assert state_path.read_bytes() == state_before
+    assert alerts_path.read_bytes() == alerts_before
+    assert discord["alerts"].call_count == 0
+    assert discord["failure"].call_count == 0
+    assert discord["missed"].call_count == 0
+
+
+def test_dry_run_creates_no_files_when_none_exist(monkeypatch, discord, files):
+    url = "https://shop.com/collections/a"
+    _run_with(monkeypatch, [_watch(url)], {url: [_product("https://shop.com/products/1", True)]}, dry_run=True)
+    assert not (files / "state.json").exists()
+    assert not (files / "alerts.jsonl").exists()

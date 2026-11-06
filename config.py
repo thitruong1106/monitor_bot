@@ -36,6 +36,16 @@ def _env_float(name: str, default: float) -> float:
         return default
 
 
+def _env_flag(name: str, default: bool = False) -> bool:
+    raw = os.environ.get(name, "").strip().lower()
+    if not raw:
+        return default
+    return raw in ("1", "true", "yes", "on")
+
+
+# Missed-run detector. Off by default: while GitHub Actions runs the bot hours
+# late it would post several times a day. Set MISSED_RUN_ALERTS=true to post.
+MISSED_RUN_ALERTS = _env_flag("MISSED_RUN_ALERTS", False)
 # Missed-run detector: warn when no successful pass for this long...
 MISSED_RUN_MINUTES = _env_float("MISSED_RUN_MINUTES", 30.0)
 # ...but post at most one warning per this many hours (gaps in between are summarised).
