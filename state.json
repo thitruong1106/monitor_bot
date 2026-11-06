@@ -1572,6 +1572,13 @@
       "https://www.goodgames.com.au/products/zou-op08-039-two-legends-foil"
     ],
     "https://www.kaika.com.au/series/one-piece/": [
+      "https://www.kaika.com.au/BAP00591",
+      "https://www.kaika.com.au/BAP06729",
+      "https://www.kaika.com.au/BAP06730",
+      "https://www.kaika.com.au/BAP06731",
+      "https://www.kaika.com.au/BAP06732",
+      "https://www.kaika.com.au/BAP06733",
+      "https://www.kaika.com.au/BAP06740",
       "https://www.kaika.com.au/glitter-glamours-nami-summer-style",
       "https://www.kaika.com.au/in-store-ichiban-kuji-one-piece-elbaph-arc-giant-b",
       "https://www.kaika.com.au/king-of-artist-kouzuki-oden-special-ver",
@@ -1731,20 +1738,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1793931710.573526,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1793931718.3644135,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1793931692.9879227,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1793931716.7911265,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1793931719.9928908,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1793931715.5615792,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1793931720.143049,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1793931713.9376907,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1793931694.580691,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1793931703.7271872,
-    "https://www.kaika.com.au/series/one-piece/": 1793931708.9671512,
-    "https://www.m-g.com.au/pre-orders/": 1793931716.0550911,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1793931689.7837543,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1793931691.3793309
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1793957461.1059616,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1793957469.4779315,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1793957447.8051317,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1793957467.829848,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1793957471.3452456,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1793957466.2960148,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1793957471.7368772,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1793957464.5320559,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1793957449.424088,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1793957458.6459303,
+    "https://www.kaika.com.au/series/one-piece/": 1793957459.4102287,
+    "https://www.m-g.com.au/pre-orders/": 1793957466.959093,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1793957444.4977002,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1793957446.1279795
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -9501,6 +9508,41 @@
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/BAP00591": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/BAP06729": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/BAP06730": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/BAP06731": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/BAP06732": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/BAP06733": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/BAP06740": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
     },
     "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/glitter-glamours-nami-summer-style": {
       "available": true,
