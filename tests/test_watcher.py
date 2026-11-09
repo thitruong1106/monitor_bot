@@ -39,10 +39,12 @@ def discord(monkeypatch):
         "alerts": MagicMock(),
         "failure": MagicMock(),
         "recovered": MagicMock(),
+        "missed": MagicMock(),
     }
     monkeypatch.setattr(discord_client, "send_alerts", mocks["alerts"])
     monkeypatch.setattr(discord_client, "send_adapter_failure_alert", mocks["failure"])
     monkeypatch.setattr(discord_client, "send_watch_recovered_alert", mocks["recovered"])
+    monkeypatch.setattr(discord_client, "send_missed_run_alert", mocks["missed"])
     return mocks
 
 
@@ -64,7 +66,7 @@ def _install_adapter(monkeypatch, fetch_results: dict):
             raise result
         return result
 
-    monkeypatch.setattr(adapters, "get_adapter", lambda url, session=None: fake_fetch)
+    monkeypatch.setattr(adapters, "get_adapter", lambda url, session=None, **kw: fake_fetch)
     monkeypatch.setattr(watcher.time, "sleep", lambda *_: None)
 
 
@@ -288,8 +290,277 @@ def test_workflow_commits_alerts_jsonl_and_schedule_is_unchanged():
     assert wf[True]["schedule"] == [{"cron": "*/5 * * * *"}]  # yaml parses the `on:` key as True
     commit_step = [s for s in wf["jobs"]["watch"]["steps"] if s.get("name") == "Commit updated state"][0]
     assert "git add state.json alerts.jsonl" in commit_step["run"]
-    assert "secrets.WEBHOOKS_JSON" in raw
+    run_step = [s for s in wf["jobs"]["watch"]["steps"] if s.get("name") == "Run watcher"][0]
+    assert run_step["env"]["WEBHOOKS_JSON"] == "${{ secrets.WEBHOOKS_JSON }}"
+    assert run_step["env"]["DISCORD_ROLE_ID"] == "${{ secrets.DISCORD_ROLE_ID }}"
+    assert run_step["env"]["HEARTBEAT_URL"] == "${{ secrets.HEARTBEAT_URL }}"
 
 
 def test_alerts_jsonl_is_tracked_in_repo():
     assert os.path.exists(os.path.join(REPO, "alerts.jsonl"))
+
+
+# ═════════════════════════════ Phase 1 ═════════════════════════════════════
+
+T0 = 1_800_000_000.0
+
+
+def _ctx(watches, dry_run=False, heartbeat_url=None, role_id=None, missed_run_alerts=False):
+    throttle = watcher.DomainThrottle(delay=0, sleep=lambda s: None)
+    raw = MagicMock()
+    return watcher.WatcherContext(
+        watches=watches,
+        webhooks={"one-piece": "https://hook/op", "_fallback": "https://hook/fb"},
+        raw_session=raw,
+        session=watcher._RetrySession(raw, throttle),
+        throttle=throttle,
+        role_id=role_id,
+        heartbeat_url=heartbeat_url,
+        dry_run=dry_run,
+        missed_run_alerts=missed_run_alerts,
+    )
+
+
+# ── Loop-ready: one context, many passes, one in-memory state ────────────────
+
+def test_run_pass_can_be_called_repeatedly_like_a_long_running_service(monkeypatch, discord):
+    url = "https://shop.com/collections/a"
+    product = "https://shop.com/products/op18"
+    results = {url: [_product(product, False)]}
+    _install_adapter(monkeypatch, results)
+    w = _watch(url, "Shop", tier="hot")
+    ctx = _ctx([w], role_id="123456789012345678")
+    state = {}
+
+    now = T0
+    summaries = []
+    for available in (False, False, True, True, False, True):
+        results[url] = [_product(product, available)]
+        summaries.append(watcher.run_pass(ctx, state, now=now))
+        now += 5 * 60                                  # 5 min apart: every pass is due for a hot watch
+
+    # Baseline silent, one alert at the flip, then cool-down holds the re-restock.
+    assert [s["alerts_sent"] for s in summaries] == [0, 0, 1, 0, 0, 0]
+    assert summaries[5]["suppressed_cooldown"] == 1
+    assert discord["alerts"].call_count == 1
+    assert discord["alerts"].call_args.kwargs["role_id"] == "123456789012345678"
+    assert not any(s["missed_run_warning"] for s in summaries)
+
+
+def test_adding_a_watch_to_an_existing_state_does_not_flood(monkeypatch, discord):
+    old_url, new_url = "https://shop.com/collections/old", "https://shop.com/collections/new"
+    results = {old_url: [_product("https://shop.com/products/1", True)],
+               new_url: [_product(f"https://shop.com/products/n{i}", True) for i in range(30)]}
+    _install_adapter(monkeypatch, results)
+    state = {}
+    watcher.run_pass(_ctx([_watch(old_url)]), state, now=T0)
+    summary = watcher.run_pass(_ctx([_watch(old_url), _watch(new_url, "New Shop")]), state, now=T0 + 900)
+    assert summary["alerts_sent"] == 0
+    assert discord["alerts"].call_count == 0
+
+
+def test_title_filters_drop_products_and_their_state(monkeypatch, discord):
+    url = "https://shop.com/collections/mixed"
+    single = _product("https://shop.com/products/luffy-op01-024", False, title="Monkey.D.Luffy OP01-024 (Romance Dawn)")
+    box = _product("https://shop.com/products/op18-box", False, title="One Piece Card Game OP-18 Booster Box")
+    results = {url: [single, box]}
+    _install_adapter(monkeypatch, results)
+    w = Watch(url=url, game="one-piece", tier="normal", type="category", retailer_name="Mixed",
+              exclude=[r"\b(?:OP|EB|ST|PRB)-?\d{2}-\d{3}\b"])
+    state = {}
+    # Pretend the single was tracked before the filter existed.
+    st.set_product_state(state, url, single["product_url"], {"state": "unavailable", "last_seen": T0})
+    watcher.run_pass(_ctx([w]), state, now=T0)
+    assert st.get_known_urls(state, url) == {box["product_url"]}
+
+    results[url] = [dict(single, available=True), dict(box, available=True)]
+    watcher.run_pass(_ctx([w]), state, now=T0 + 3600)
+    sent = discord["alerts"].call_args.args[0]
+    assert [a["product_url"] for a in sent] == [box["product_url"]]
+
+
+def test_filtered_to_zero_is_not_a_failure(monkeypatch, discord):
+    url = "https://shop.com/collections/figures"
+    _install_adapter(monkeypatch, {url: [_product("https://shop.com/products/fig", True, title="Grandista Zoro")]})
+    w = Watch(url=url, game="one-piece", tier="normal", type="category", retailer_name="Figures",
+              include=[r"booster"])
+    watcher.run_pass(_ctx([w]), {}, now=T0)
+    assert discord["failure"].call_count == 0
+
+
+# ── Missed-run detector ──────────────────────────────────────────────────────
+
+def test_missed_run_warning_posted_to_fallback_once(monkeypatch, discord):
+    url = "https://shop.com/collections/a"
+    _install_adapter(monkeypatch, {url: [_product("https://shop.com/products/1", False)]})
+    state = {}
+    ctx = _ctx([_watch(url)], missed_run_alerts=True)
+    watcher.run_pass(ctx, state, now=T0)
+    watcher.run_pass(ctx, state, now=T0 + 20 * 60)           # 20 min gap: fine
+    assert discord["missed"].call_count == 0
+    watcher.run_pass(ctx, state, now=T0 + 20 * 60 + 4 * 3600)  # 4 h gap: warn
+    assert discord["missed"].call_count == 1
+    warning, hook, _ = discord["missed"].call_args.args
+    assert hook == "https://hook/fb"
+    assert warning["gap_seconds"] == 4 * 3600
+    watcher.run_pass(ctx, state, now=T0 + 20 * 60 + 8 * 3600)  # another 4 h gap, < 6 h since warning
+    assert discord["missed"].call_count == 1
+
+
+def test_missed_run_not_posted_in_dry_run(monkeypatch, discord):
+    state = {"run_health": {"last_success": T0}}
+    summary = watcher.run_pass(_ctx([], dry_run=True, missed_run_alerts=True), state, now=T0 + 5 * 3600)
+    assert summary["missed_run_warning"] is True
+    assert discord["missed"].call_count == 0
+
+
+def test_heartbeat_pinged_after_successful_pass_only_when_configured(monkeypatch, discord):
+    ctx = _ctx([], heartbeat_url="https://hc-ping.example/abc")
+    watcher.run_pass(ctx, {}, now=T0)
+    ctx.raw_session.get.assert_called_once_with("https://hc-ping.example/abc", timeout=10)
+
+    ctx2 = _ctx([], heartbeat_url=None)
+    watcher.run_pass(ctx2, {}, now=T0)
+    ctx2.raw_session.get.assert_not_called()
+
+
+def test_dry_run_posts_nothing_to_fallback(monkeypatch, discord):
+    url = "https://broken.example/collections/a"
+    _install_adapter(monkeypatch, {url: RuntimeError("boom")})
+    watcher.run_pass(_ctx([_watch(url)], dry_run=True), {}, now=T0)
+    assert discord["failure"].call_count == 0
+
+
+# ── Platform stored per watch: no probing ────────────────────────────────────
+
+def test_platform_in_watches_yaml_skips_the_probe(monkeypatch):
+    from adapters import generic_html, shopify
+    def boom(*a, **k):
+        raise AssertionError("probe must not run when platform is set")
+    monkeypatch.setattr(shopify, "is_shopify", boom)
+    session = MagicMock()
+    assert adapters.get_adapter("https://x.example/collections/a", session, platform="shopify") is shopify.fetch_collection
+    assert adapters.get_adapter("https://x.example/products/a", session, platform="shopify") is shopify.fetch_product
+    assert adapters.get_adapter("https://y.example/series/a/", session, platform="other") is generic_html.fetch
+    session.get.assert_not_called()
+
+
+# ── The real config and data files ───────────────────────────────────────────
+
+def _real_watches():
+    return load_watches(os.path.join(REPO, "watches.yaml"))
+
+
+def test_every_watch_declares_its_platform():
+    assert all(w.platform in ("shopify", "other") for w in _real_watches())
+
+
+def test_no_two_watches_hit_the_same_endpoint_with_the_same_filters():
+    from adapters import shopify
+    seen = {}
+    for w in _real_watches():
+        endpoint = shopify._collection_json_url(w.url) if "/collections/" in w.url else w.url
+        key = (endpoint, w.url.split("?", 1)[1] if "?" in w.url else "", w.filters_fingerprint)
+        assert key not in seen, f"{w.retailer_name} duplicates {seen.get(key)}"
+        seen[key] = w.retailer_name
+
+
+def test_duplicate_gameology_preorder_watch_removed():
+    assert not any("#/filter" in w.url for w in _real_watches())
+
+
+def test_op18_product_pages_watched_at_hot_tier():
+    ws = {w.url: w for w in _real_watches()}
+    for url in ("https://www.goodgames.com.au/products/one-piece-card-game-booster-box-tba-op-18",
+                "https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box"):
+        assert ws[url].tier == "hot" and ws[url].type == "product" and ws[url].platform == "shopify"
+        assert adapters.get_adapter(url, None, platform="shopify").__name__ == "fetch_product"
+
+
+def test_in_stock_only_watches_use_missing_means_unavailable():
+    ws = {w.retailer_name: w for w in _real_watches()}
+    assert ws["Good Games (In Stock)"].missing_means_unavailable
+    assert ws["Rhystic Nostalgia Gaming"].missing_means_unavailable
+
+
+def test_alerts_jsonl_has_no_test_rows():
+    with open(os.path.join(REPO, "alerts.jsonl"), encoding="utf-8") as f:
+        rows = [json.loads(l) for l in f if l.strip()]
+    assert not [r for r in rows if "shop.com/" in r["url"] or r["url"].endswith("/op09-booster-box")]
+
+
+def test_save_watches_round_trips_new_fields(tmp_path):
+    from config import save_watches
+    path = str(tmp_path / "w.yaml")
+    original = _real_watches()
+    save_watches(original, path)
+    again = load_watches(path)
+    assert [vars(a) | {"_include_re": None, "_exclude_re": None} for a in again] == \
+           [vars(b) | {"_include_re": None, "_exclude_re": None} for b in original]
+
+
+# ── Missed-run alerts are opt-in ─────────────────────────────────────────────
+
+def test_missed_run_alerts_are_off_by_default(monkeypatch, discord):
+    state = {"run_health": {"last_success": T0}}
+    summary = watcher.run_pass(_ctx([]), state, now=T0 + 5 * 3600)
+    assert summary["missed_run_warning"] is False
+    assert discord["missed"].call_count == 0
+    assert state["run_health"]["last_success"] == T0 + 5 * 3600   # still tracked, ready to switch on
+
+
+@pytest.mark.parametrize("value,expected", [
+    (None, False), ("", False), ("false", False), ("0", False), ("off", False),
+    ("true", True), ("1", True), ("YES", True), ("on", True),
+])
+def test_missed_run_alerts_env_flag(monkeypatch, value, expected):
+    if value is None:
+        monkeypatch.delenv("MISSED_RUN_ALERTS", raising=False)
+    else:
+        monkeypatch.setenv("MISSED_RUN_ALERTS", value)
+    assert watcher.build_context(watches=[], webhooks={}).missed_run_alerts is expected
+
+
+# ── Dry run never writes state.json or alerts.jsonl ──────────────────────────
+
+def test_dry_run_leaves_state_and_alerts_files_byte_identical(monkeypatch, discord, files):
+    """
+    The worst case for a dry run: an old-format state.json (so migration runs),
+    a removed watch (so pruning runs), a product flip (so an alert is produced),
+    a failing watch, and a 5 h gap with missed-run alerts switched on.
+    """
+    monkeypatch.setenv("MISSED_RUN_ALERTS", "true")
+    url = "https://shop.com/collections/a"
+    broken = "https://broken.com/collections/b"
+    product = "https://shop.com/products/op18"
+    v1_state = {
+        "category_urls": {url: [product], "https://gone.com/collections/old": ["https://gone.com/products/x"]},
+        "last_checked": {url: T0, "https://gone.com/collections/old": T0},
+        "products": {
+            f"{url}||{product}": {"available": False, "is_preorder": False, "state": "unavailable"},
+            "https://gone.com/collections/old||https://gone.com/products/x": {"available": True, "state": "in_stock"},
+        },
+        "run_health": {"last_success": T0 - 5 * 3600},
+    }
+    state_path = files / "state.json"
+    alerts_path = files / "alerts.jsonl"
+    state_path.write_text(json.dumps(v1_state, indent=2) + "\n", encoding="utf-8")
+    alerts_path.write_text('{"title": "existing row"}\n', encoding="utf-8")
+    state_before = state_path.read_bytes()
+    alerts_before = alerts_path.read_bytes()
+
+    _run_with(monkeypatch, [_watch(url), _watch(broken, "Broken")],
+              {url: [_product(product, True)], broken: RuntimeError("down")}, dry_run=True)
+
+    assert state_path.read_bytes() == state_before
+    assert alerts_path.read_bytes() == alerts_before
+    assert discord["alerts"].call_count == 0
+    assert discord["failure"].call_count == 0
+    assert discord["missed"].call_count == 0
+
+
+def test_dry_run_creates_no_files_when_none_exist(monkeypatch, discord, files):
+    url = "https://shop.com/collections/a"
+    _run_with(monkeypatch, [_watch(url)], {url: [_product("https://shop.com/products/1", True)]}, dry_run=True)
+    assert not (files / "state.json").exists()
+    assert not (files / "alerts.jsonl").exists()

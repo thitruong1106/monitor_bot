@@ -32,6 +32,10 @@ jobs:
       - name: Run watcher
         env:
           WEBHOOKS_JSON: ${{ secrets.WEBHOOKS_JSON }}
+          # Optional. Numeric Discord role ID to @mention on stock alerts.
+          DISCORD_ROLE_ID: ${{ secrets.DISCORD_ROLE_ID }}
+          # Optional. Dead-man's-switch URL (e.g. healthchecks.io) pinged after each good pass.
+          HEARTBEAT_URL: ${{ secrets.HEARTBEAT_URL }}
         run: python watcher.py
 
       - name: Commit updated state

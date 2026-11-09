@@ -1,71 +1,109 @@
+- url: https://www.goodgames.com.au/products/one-piece-card-game-booster-box-tba-op-18
+  game: one-piece
+  tier: hot
+  type: product
+  retailer_name: Good Games (OP-18)
+  platform: shopify
+  cooldown_hours: 1.0
+- url: https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box
+  game: one-piece
+  tier: hot
+  type: product
+  retailer_name: Gameology (OP-18)
+  platform: shopify
+  cooldown_hours: 1.0
 - url: https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case
   game: one-piece
   tier: normal
   type: category
   retailer_name: TCG Group AU
+  platform: shopify
 - url: https://www.treasurecollectables.com.au/collections/other-tcgs
   game: one-piece
   tier: normal
   type: category
   retailer_name: Treasure Collectables
+  platform: shopify
+  include:
+  - \bone\s*piece\b
+  - \b(?:OP|EB|PRB)-?\d{2}\b
 - url: https://gamesportal.com.au/collections/one-piece-card-game
   game: one-piece
   tier: normal
   type: category
   retailer_name: Games Portal
+  platform: shopify
 - url: https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon
   game: one-piece
   tier: normal
   type: category
   retailer_name: Good Games (Coming Soon)
+  platform: shopify
 - url: https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock
   game: one-piece
   tier: normal
   type: category
   retailer_name: Good Games (In Stock)
+  platform: shopify
+  exclude:
+  - \b(?:OP|EB|ST|PRB)-?\d{2}-\d{3}\b
+  - \bP-\d{3}\b
+  - ^\s*DON(?:!!|\s+card\b)
+  missing_means_unavailable: true
 - url: https://www.kaika.com.au/series/one-piece/
   game: one-piece
-  tier: normal
+  tier: slow
   type: category
   retailer_name: Kaika
+  platform: other
+  include:
+  - card\s*game
+  - \bbooster\b
+  - starter\s*deck
+  - \b(?:OP|EB|ST|PRB)-?\d{2}\b
 - url: https://collectiblemadness.com.au/collections/one-piece-card-game
   game: one-piece
   tier: normal
   type: category
   retailer_name: Collectible Madness
+  platform: shopify
 - url: https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249
   game: one-piece
   tier: normal
   type: category
   retailer_name: Gamers Room
+  platform: other
 - url: https://www.gameology.com.au/collections/one-piece-booster-boxs
   game: one-piece
   tier: normal
   type: category
   retailer_name: Gameology
+  platform: shopify
 - url: https://www.m-g.com.au/pre-orders/
   game: one-piece
   tier: normal
   type: category
   retailer_name: M-G
+  platform: other
+  include:
+  - \bone\s*piece\b
+  - \b(?:OP|EB|PRB)-?\d{2}\b
 - url: https://njcollectables.com.au/trading-card-games/one-piece
   game: one-piece
   tier: normal
   type: category
   retailer_name: NJ Collectables
+  platform: other
 - url: https://eetcg.com.au/collections/one-piece-card-game
   game: one-piece
   tier: normal
   type: category
   retailer_name: EE TCG
+  platform: shopify
 - url: https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock
   game: one-piece
   tier: normal
   type: category
   retailer_name: Rhystic Nostalgia Gaming
-
-- url: https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order
-  game: one-piece
-  tier: normal
-  type: category
-  retailer_name: Gameology (Preorder)
+  platform: shopify
+  missing_means_unavailable: true
