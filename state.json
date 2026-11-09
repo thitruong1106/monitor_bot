@@ -565,6 +565,7 @@
       "https://www.goodgames.com.au/products/charlotte-katakuri-op08-063-two-legends-foil",
       "https://www.goodgames.com.au/products/charlotte-katakuri-reprint-op03-123-premium-booster-the-best-foil",
       "https://www.goodgames.com.au/products/charlotte-katakuri-reprint-st16-003-premium-booster-the-best-vol-2",
+      "https://www.goodgames.com.au/products/charlotte-linlin-eb03-034-extra-booster-one-piece-heroines-edition-alternate-art-foil",
       "https://www.goodgames.com.au/products/charlotte-linlin-op03-114-pillars-of-strength-foil",
       "https://www.goodgames.com.au/products/charlotte-lola-op11-052-a-fist-of-divine-speed",
       "https://www.goodgames.com.au/products/charlotte-lola-op15-082-adventure-on-kamis-island",
@@ -1029,6 +1030,7 @@
       "https://www.goodgames.com.au/products/littleoars-jr-eb01-008-extra-booster-memorial-collection-foil",
       "https://www.goodgames.com.au/products/littleoars-jr-op13-056-carrying-on-his-will",
       "https://www.goodgames.com.au/products/littleoars-jr-op16-017-the-time-of-battle-foil",
+      "https://www.goodgames.com.au/products/loki-op17-119-the-worlds-strongest-warriors-foil",
       "https://www.goodgames.com.au/products/lord-of-the-coast-op13-010-carrying-on-his-will",
       "https://www.goodgames.com.au/products/love-love-mellow-pcc-vol-1-st03-017-one-piece-promotion-cards-alternate-art-foil",
       "https://www.goodgames.com.au/products/lucy-op07-112-500-years-in-the-future-foil",
@@ -1749,20 +1751,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794189125.8041592,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1794189134.3642044,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1794189112.9910038,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1794189132.7508104,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794189136.1147704,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794189130.8264446,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794189136.2524316,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794189129.167736,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794189114.606143,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794189123.714855,
-    "https://www.kaika.com.au/series/one-piece/": 1794189124.1607382,
-    "https://www.m-g.com.au/pre-orders/": 1794189131.589865,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794189109.6872213,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794189111.3013678
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794213823.9430456,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1794213833.1015847,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1794213810.8334317,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1794213831.4870663,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794213834.8962057,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794213828.9754312,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794213835.023426,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794213827.3656163,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794213812.4889615,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794213821.6728425,
+    "https://www.kaika.com.au/series/one-piece/": 1794213822.3210592,
+    "https://www.m-g.com.au/pre-orders/": 1794213830.3066185,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794213807.5290308,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794213809.132305
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -4495,6 +4497,11 @@
       "is_preorder": false,
       "state": "in_stock"
     },
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/charlotte-linlin-eb03-034-extra-booster-one-piece-heroines-edition-alternate-art-foil": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/charlotte-linlin-op03-114-pillars-of-strength-foil": {
       "available": true,
       "is_preorder": false,
@@ -6815,6 +6822,11 @@
       "is_preorder": false,
       "state": "in_stock"
     },
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/loki-op17-119-the-worlds-strongest-warriors-foil": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/lord-of-the-coast-op13-010-carrying-on-his-will": {
       "available": true,
       "is_preorder": false,
@@ -7627,18 +7639,18 @@
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-34": {
       "available": true,
-      "is_preorder": true,
-      "state": "preorder_open"
+      "is_preorder": false,
+      "state": "in_stock"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-35": {
       "available": true,
-      "is_preorder": true,
-      "state": "preorder_open"
+      "is_preorder": false,
+      "state": "in_stock"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-36": {
       "available": true,
-      "is_preorder": true,
-      "state": "preorder_open"
+      "is_preorder": false,
+      "state": "in_stock"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock||https://www.goodgames.com.au/products/one-piece-card-game-tin-pack-set-vol-3-ts-03": {
       "available": true,
