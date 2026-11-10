@@ -1585,6 +1585,8 @@
       "https://www.kaika.com.au/BAP06732",
       "https://www.kaika.com.au/BAP06733",
       "https://www.kaika.com.au/BAP06740",
+      "https://www.kaika.com.au/TMN01495",
+      "https://www.kaika.com.au/TMN01503",
       "https://www.kaika.com.au/glitter-glamours-nami-summer-style",
       "https://www.kaika.com.au/in-store-ichiban-kuji-one-piece-elbaph-arc-giant-b",
       "https://www.kaika.com.au/king-of-artist-kouzuki-oden-special-ver",
@@ -1751,20 +1753,20 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794276007.711402,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1794276016.2114105,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1794275992.7105474,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1794276014.5766213,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794276018.0266557,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794276012.7914839,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794276018.1801734,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794276011.0759854,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794275994.3359773,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794276003.8477254,
-    "https://www.kaika.com.au/series/one-piece/": 1794276006.0214653,
-    "https://www.m-g.com.au/pre-orders/": 1794276013.5203633,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794275989.2949028,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794275990.9494052
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794302341.7950578,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1794302353.0991068,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1794302327.0805264,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1794302351.4453256,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794302354.8638058,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794302346.9007354,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794302355.0386703,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794302345.165453,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794302328.734595,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794302337.9157517,
+    "https://www.kaika.com.au/series/one-piece/": 1794302340.104234,
+    "https://www.m-g.com.au/pre-orders/": 1794302350.176204,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794302323.7795668,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794302325.4313323
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -9583,6 +9585,16 @@
       "state": "preorder_open"
     },
     "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/BAP06740": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/TMN01495": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/TMN01503": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
