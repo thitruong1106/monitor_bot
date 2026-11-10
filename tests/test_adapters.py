@@ -407,3 +407,45 @@ def test_generic_fallback_still_parses_real_cards_next_to_a_facet_sidebar():
     results = generic_html._parse_page(html, "https://shop.com/collection/one-piece")
     urls = {r["product_url"] for r in results}
     assert urls == {"https://shop.com/products/booster-a", "https://shop.com/products/booster-b"}
+
+
+# ── Good Games sealed filter: multi-word product_type ────────────────────────
+
+def _goodgames_products():
+    def prod(handle, product_type, tags):
+        return {
+            "handle": handle,
+            "title": handle,
+            "product_type": product_type,
+            "tags": tags,
+            "variants": [{"available": True, "price": "10.00"}],
+        }
+    return [
+        prod("op-booster-box", "Trading Card Games", []),
+        prod("op-single-card", "One Piece TCG", ["Inventory Type: SINGLES"]),
+        prod("op-figure", "Anime Figures", []),
+        prod("op-playmat", "Playmats", []),
+    ]
+
+
+@pytest.mark.parametrize("qs", [
+    "pf_pt_product_type=Trading+Card+Games",
+    "pf_pt_product_type=Trading%20Card%20Games",
+    "pf_pt_product_type=trading+card+games",
+    "pf_pt_product_type=%20Trading+Card+Games%20",
+])
+def test_filter_product_type_multiword_sealed_only(qs):
+    filtered = shopify._apply_client_filters(_goodgames_products(), qs)
+    assert [p["handle"] for p in filtered] == ["op-booster-box"]
+
+
+def test_filter_product_type_missing_or_none_product_type_excluded():
+    products = [{"handle": "x", "product_type": None, "variants": []},
+                {"handle": "y", "variants": []}]
+    assert shopify._apply_client_filters(products, "pf_pt_product_type=Trading+Card+Games") == []
+
+
+def test_goodgames_sealed_url_dispatches_to_shopify_collection():
+    from adapters import get_adapter
+    url = "https://goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games"
+    assert get_adapter(url) is shopify.fetch_collection

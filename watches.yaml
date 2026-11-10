@@ -18,11 +18,6 @@
   tier: normal
   type: category
   retailer_name: Good Games (Coming Soon)
-- url: https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock
-  game: one-piece
-  tier: normal
-  type: category
-  retailer_name: Good Games (In Stock)
 - url: https://www.kaika.com.au/series/one-piece/
   game: one-piece
   tier: normal
@@ -63,9 +58,13 @@
   tier: normal
   type: category
   retailer_name: Rhystic Nostalgia Gaming
-
 - url: https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order
   game: one-piece
   tier: normal
   type: category
   retailer_name: Gameology (Preorder)
+- url: https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games
+  game: one-piece
+  tier: normal
+  type: category
+  retailer_name: Good Games (Sealed)

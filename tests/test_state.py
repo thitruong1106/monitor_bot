@@ -157,3 +157,38 @@ def test_set_and_get_last_checked():
     s = {}
     st.set_last_checked(s, "https://example.com", 12345.0)
     assert st.get_last_checked(s, "https://example.com") == 12345.0
+
+
+# ── M1: per-watch first run & preorder→in_stock ──────────────────────────────
+
+def test_new_watch_on_populated_state_first_scan_silent_then_alerts():
+    s = {}
+    st.detect_transitions(s, WATCH_URL, [make_product("https://a.test/p/1", "A", True)])
+    assert s.get("products")  # state is populated
+
+    other = "https://other.test/collections/one-piece"
+    p1 = make_product("https://b.test/p/1", "B1", True)
+    assert st.detect_transitions(s, other, [p1]) == []  # first scan of new watch
+
+    p2 = make_product("https://b.test/p/2", "B2", True)
+    alerts = st.detect_transitions(s, other, [p1, p2])
+    assert len(alerts) == 1
+    assert alerts[0]["alert_type"] == "NEW_LISTING"
+    assert alerts[0]["product_url"] == "https://b.test/p/2"
+
+
+def test_preorder_open_to_in_stock_alerts_back_in_stock():
+    s = {}
+    url = "https://example.com/p/x"
+    st.detect_transitions(s, WATCH_URL, [make_product(url, "X", True, is_preorder=True)])
+    alerts = st.detect_transitions(s, WATCH_URL, [make_product(url, "X", True, is_preorder=False)])
+    assert len(alerts) == 1
+    assert alerts[0]["alert_type"] == "BACK_IN_STOCK"
+
+
+def test_in_stock_to_preorder_open_no_alert():
+    s = {}
+    url = "https://example.com/p/x"
+    st.detect_transitions(s, WATCH_URL, [make_product(url, "X", True, is_preorder=False)])
+    alerts = st.detect_transitions(s, WATCH_URL, [make_product(url, "X", True, is_preorder=True)])
+    assert alerts == []
