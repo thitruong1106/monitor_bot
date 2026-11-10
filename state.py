@@ -130,7 +130,8 @@ def detect_transitions(
     alerts: list[dict] = []
     current_urls = {p["product_url"] for p in current_products}
     known_urls = get_known_urls(state, watch_url)
-    is_first_run = not known_urls and not state.get("products")
+    # First run is per watch: no known URLs for this watch yet.
+    is_first_run = not known_urls
 
     for product in current_products:
         url = product["product_url"]
@@ -171,6 +172,11 @@ def detect_transitions(
             if current_cls in ("in_stock", "preorder_open"):
                 if prev_cls == "unavailable":
                     alert_type = "PREORDER_OPEN" if is_preorder else "BACK_IN_STOCK"
+                elif prev_cls == "preorder_open" and current_cls == "in_stock":
+                    alert_type = "BACK_IN_STOCK"
+                else:
+                    alert_type = None
+                if alert_type:
                     alerts.append({
                         "product_url": url,
                         "title": product.get("title", "Unknown Product"),
