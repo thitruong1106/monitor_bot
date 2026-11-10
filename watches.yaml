@@ -58,13 +58,12 @@
   tier: normal
   type: category
   retailer_name: Rhystic Nostalgia Gaming
-
 - url: https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order
   game: one-piece
   tier: normal
   type: category
   retailer_name: Gameology (Preorder)
-- url: https://goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games
+- url: https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games
   game: one-piece
   tier: normal
   type: category
