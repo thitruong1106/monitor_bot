@@ -80,11 +80,11 @@ def _apply_client_filters(products: list[dict], query_string: str) -> list[dict]
         products = [p for p in products if _product_available(p)]
 
     # Product type filter (OR across repeated values)
-    type_values = [v.lower() for v in qs.get("pf_pt_product_type", [])]
+    type_values = [v.strip().lower() for v in qs.get("pf_pt_product_type", [])]
     if type_values:
         products = [
             p for p in products
-            if p.get("product_type", "").lower() in type_values
+            if (p.get("product_type") or "").strip().lower() in type_values
         ]
 
     return products
