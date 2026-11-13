@@ -1682,12 +1682,14 @@
       "https://www.kaika.com.au/pre-order-grandista-roronoa-zoro-iii",
       "https://www.kaika.com.au/pre-order-grandista-the-grandline-men-sanji-re-rel",
       "https://www.kaika.com.au/pre-order-king-of-artist-trafalgar-law-ii-special",
+      "https://www.kaika.com.au/pre-order-lookup-koby",
       "https://www.kaika.com.au/pre-order-luffys-one-piece-card-game-don-card",
       "https://www.kaika.com.au/pre-order-maximatic-saint-gunko",
       "https://www.kaika.com.au/pre-order-noir-edge-collection-portgas-d.-ace",
       "https://www.kaika.com.au/pre-order-noir-edge-collection-sabo",
       "https://www.kaika.com.au/pre-order-one-piece-world-collectable-figure-elbap~362280",
       "https://www.kaika.com.au/pre-order-portrait.of.pirates-elb-maximum-loki",
+      "https://www.kaika.com.au/pre-order-portrait.of.pirates-elevated-boost-nami",
       "https://www.kaika.com.au/pre-order-portrait.of.pirates-sa-maximum-monkey.d",
       "https://www.kaika.com.au/pre-order-s.h.figuarts-edward-newgate-marineford",
       "https://www.kaika.com.au/pre-order-s.h.figuarts-nami-two-years-later",
@@ -1839,21 +1841,21 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794581523.8290653,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1794581536.807842,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1794581518.3142471,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1794581535.1589913,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794581538.5803716,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794581529.302132,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794581538.698362,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794581527.607725,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794581519.9319468,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1794581547.8142624,
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794603670.1108708,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1794603682.9046283,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1794603666.3834383,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1794603681.3093126,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794603684.6960306,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794603675.13956,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794603684.7958984,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794603673.519182,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794603667.9972684,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1794603693.9312584,
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794302337.9157517,
-    "https://www.kaika.com.au/series/one-piece/": 1794581522.145278,
-    "https://www.m-g.com.au/pre-orders/": 1794581534.4053583,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794581514.9212365,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794581516.5514796
+    "https://www.kaika.com.au/series/one-piece/": 1794603668.4683304,
+    "https://www.m-g.com.au/pre-orders/": 1794603680.4742434,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794603663.0484388,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794603664.649674
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -10151,6 +10153,11 @@
       "is_preorder": true,
       "state": "preorder_open"
     },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/pre-order-lookup-koby": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
     "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/pre-order-luffys-one-piece-card-game-don-card": {
       "available": true,
       "is_preorder": true,
@@ -10177,6 +10184,11 @@
       "state": "preorder_open"
     },
     "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/pre-order-portrait.of.pirates-elb-maximum-loki": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/pre-order-portrait.of.pirates-elevated-boost-nami": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
