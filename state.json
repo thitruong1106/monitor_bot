@@ -1663,6 +1663,8 @@
       "https://www.kaika.com.au/BAP06732",
       "https://www.kaika.com.au/BAP06733",
       "https://www.kaika.com.au/BAP06740",
+      "https://www.kaika.com.au/MGH02204",
+      "https://www.kaika.com.au/MGH02221",
       "https://www.kaika.com.au/TMN01495",
       "https://www.kaika.com.au/TMN01503",
       "https://www.kaika.com.au/glitter-glamours-nami-summer-style",
@@ -1837,21 +1839,21 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794551812.5129223,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1794551821.2099006,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1794551807.0383887,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1794551819.5035434,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794551823.0001125,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794551817.5572352,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794551823.2313693,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794551815.8626356,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794551808.676199,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1794551832.3583355,
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794581523.8290653,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1794581536.807842,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1794581518.3142471,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1794581535.1589913,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794581538.5803716,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794581529.302132,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794581538.698362,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794581527.607725,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794581519.9319468,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1794581547.8142624,
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794302337.9157517,
-    "https://www.kaika.com.au/series/one-piece/": 1794551810.793344,
-    "https://www.m-g.com.au/pre-orders/": 1794551818.5382323,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794551803.5163257,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794551805.1921158
+    "https://www.kaika.com.au/series/one-piece/": 1794581522.145278,
+    "https://www.m-g.com.au/pre-orders/": 1794581534.4053583,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794581514.9212365,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794581516.5514796
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2145,9 +2147,9 @@
       "state": "in_stock"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-op-18-booster-box": {
-      "available": false,
+      "available": true,
       "is_preorder": true,
-      "state": "unavailable"
+      "state": "preorder_open"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-set-sail-deck-set-sd-01": {
       "available": false,
@@ -10050,6 +10052,16 @@
       "state": "preorder_open"
     },
     "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/BAP06740": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/MGH02204": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/MGH02221": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
