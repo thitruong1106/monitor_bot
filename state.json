@@ -1747,6 +1747,7 @@
       "https://www.m-g.com.au/product/if-words-could-kill/",
       "https://www.m-g.com.au/product/jisogi/",
       "https://www.m-g.com.au/product/love-letter-deluxe-edition/",
+      "https://www.m-g.com.au/product/magical-athlete-second-wind/",
       "https://www.m-g.com.au/product/march-of-the-ants-evolved-edition/",
       "https://www.m-g.com.au/product/morty-sorty-magic-shop/",
       "https://www.m-g.com.au/product/munchkin-second-edition/",
@@ -1766,11 +1767,14 @@
       "https://www.m-g.com.au/product/some-assembly-required/",
       "https://www.m-g.com.au/product/star-trek-space-hunt/",
       "https://www.m-g.com.au/product/that-dicey-word-game/",
+      "https://www.m-g.com.au/product/thunder-road-ignition/",
       "https://www.m-g.com.au/product/unmatched-stars-and-stripes/",
       "https://www.m-g.com.au/product/vicious-gardens/",
       "https://www.m-g.com.au/product/yugioh-immortal-phoenix-booster-box/",
       "https://www.m-g.com.au/product/yugioh-immortal-phoenix-booster-single/",
       "https://www.m-g.com.au/product/yugioh-magnificent-maestros-premium-boxset/",
+      "https://www.m-g.com.au/product/yugioh-maze-of-machines-booster-box/",
+      "https://www.m-g.com.au/product/yugioh-maze-of-machines-booster-single/",
       "https://www.m-g.com.au/product/yugioh-seto-kaiba-structure-deck/",
       "https://www.m-g.com.au/product/yugioh-yugi-muto-structure-deck/"
     ],
@@ -1833,21 +1837,21 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794528753.9383578,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1794528767.3144784,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1794528749.628852,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1794528765.652839,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794528769.218928,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794528759.088813,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794528769.399335,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794528757.3684447,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794528751.3083546,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1794528777.3893642,
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794551812.5129223,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1794551821.2099006,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1794551807.0383887,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1794551819.5035434,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794551823.0001125,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794551817.5572352,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794551823.2313693,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794551815.8626356,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794551808.676199,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1794551832.3583355,
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794302337.9157517,
-    "https://www.kaika.com.au/series/one-piece/": 1794528752.2191527,
-    "https://www.m-g.com.au/pre-orders/": 1794528764.6693118,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794528746.2769837,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794528747.9698148
+    "https://www.kaika.com.au/series/one-piece/": 1794551810.793344,
+    "https://www.m-g.com.au/pre-orders/": 1794551818.5382323,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794551803.5163257,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794551805.1921158
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -3971,9 +3975,9 @@
       "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-34": {
-      "available": true,
+      "available": false,
       "is_preorder": false,
-      "state": "in_stock"
+      "state": "unavailable"
     },
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games||https://www.goodgames.com.au/products/one-piece-card-game-starter-deck-tba-st-35": {
       "available": true,
@@ -10460,6 +10464,11 @@
       "is_preorder": true,
       "state": "preorder_open"
     },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/magical-athlete-second-wind/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/march-of-the-ants-evolved-edition/": {
       "available": false,
       "is_preorder": false,
@@ -10555,6 +10564,11 @@
       "is_preorder": true,
       "state": "preorder_open"
     },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/thunder-road-ignition/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/unmatched-stars-and-stripes/": {
       "available": true,
       "is_preorder": true,
@@ -10576,6 +10590,16 @@
       "state": "preorder_open"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/yugioh-magnificent-maestros-premium-boxset/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/yugioh-maze-of-machines-booster-box/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/yugioh-maze-of-machines-booster-single/": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
