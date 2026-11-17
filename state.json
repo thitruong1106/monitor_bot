@@ -1701,6 +1701,7 @@
       "https://www.kaika.com.au/pre-order-wallstar-monkey-d.-luffy-gear-5",
       "https://www.kaika.com.au/pre-order-wallstar-nami-elbaph-arc",
       "https://www.kaika.com.au/pre-order-wallstar-roronoa-zoro",
+      "https://www.kaika.com.au/s.h.figuarts-sir-crocodile-summit-war-of-marinefor",
       "https://www.kaika.com.au/series/one-piece/?pr=0-100&rf=pr",
       "https://www.kaika.com.au/series/one-piece/?pr=100-200&rf=pr",
       "https://www.kaika.com.au/series/one-piece/?pr=200-300&rf=pr",
@@ -1775,6 +1776,7 @@
       "https://www.m-g.com.au/product/star-trek-space-hunt/",
       "https://www.m-g.com.au/product/that-dicey-word-game/",
       "https://www.m-g.com.au/product/thunder-road-ignition/",
+      "https://www.m-g.com.au/product/unmatched-hellboy/",
       "https://www.m-g.com.au/product/unmatched-stars-and-stripes/",
       "https://www.m-g.com.au/product/vicious-gardens/",
       "https://www.m-g.com.au/product/yugioh-immortal-phoenix-booster-box/",
@@ -1844,21 +1846,21 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794876818.219368,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1794876829.5834737,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1794876813.2902882,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1794876827.9639554,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794876831.373031,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794876823.2047567,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794876831.54574,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794876821.5382776,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794876814.9337926,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1794876840.6611564,
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1794904499.5660224,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1794904509.745817,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1794904494.732198,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1794904508.1274614,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1794904511.5470648,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1794904504.4974337,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1794904511.6797976,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1794904502.863957,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1794904496.3410397,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1794904520.7960484,
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794302337.9157517,
-    "https://www.kaika.com.au/series/one-piece/": 1794876816.5473099,
-    "https://www.m-g.com.au/pre-orders/": 1794876827.1793187,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794876810.024096,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794876811.656848
+    "https://www.kaika.com.au/series/one-piece/": 1794904497.9486966,
+    "https://www.m-g.com.au/pre-orders/": 1794904507.480984,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1794904491.4756455,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1794904493.10837
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2072,9 +2074,9 @@
       "state": "unavailable"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-double-pack-13-dp-13": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-double-pack-9-dp-09": {
       "available": false,
@@ -10251,6 +10253,11 @@
       "is_preorder": true,
       "state": "preorder_open"
     },
+    "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/s.h.figuarts-sir-crocodile-summit-war-of-marinefor": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
     "https://www.kaika.com.au/series/one-piece/||https://www.kaika.com.au/series/one-piece/?pr=0-100&rf=pr": {
       "available": false,
       "is_preorder": false,
@@ -10607,6 +10614,11 @@
       "state": "preorder_open"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/thunder-road-ignition/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/unmatched-hellboy/": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
