@@ -1730,6 +1730,11 @@
       "https://www.kaika.com.au/yuracolle-series-one-piece-grandline-collection-vo"
     ],
     "https://www.m-g.com.au/pre-orders/": [
+      "https://www.m-g.com.au/product/41-50-blood-angels-angelus-assault-force/",
+      "https://www.m-g.com.au/product/43-116-chaos-knights-hellhunt-lance-battleforce/",
+      "https://www.m-g.com.au/product/48-105-space-marines-indomitus-task-force/",
+      "https://www.m-g.com.au/product/49-53-necrons-disciples-of-nekrosor/",
+      "https://www.m-g.com.au/product/53-34-space-wolves-battleforce-champions-of-fenris/",
       "https://www.m-g.com.au/product/agricola-special-wooden-edition/",
       "https://www.m-g.com.au/product/album-pokemon-pitch-black-9pkt-portfolio-folder/",
       "https://www.m-g.com.au/product/ants/",
@@ -1778,6 +1783,8 @@
       "https://www.m-g.com.au/product/play-ball/",
       "https://www.m-g.com.au/product/pokemon-delta-reign-booster-box/",
       "https://www.m-g.com.au/product/pokemon-delta-reign-booster-single/",
+      "https://www.m-g.com.au/product/pokemon-flowing-fists-booster-box/",
+      "https://www.m-g.com.au/product/pokemon-flowing-fists-booster-single/",
       "https://www.m-g.com.au/product/radlands-essentials-complete-edition/",
       "https://www.m-g.com.au/product/root-the-homeland-expansion/",
       "https://www.m-g.com.au/product/santorini-god-pack-hiding-in-the-underworld/",
@@ -1860,21 +1867,21 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1795289203.1070096,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1795289215.2601476,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1795289199.2626107,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1795289213.6754055,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1795289217.0751643,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1795289208.1122823,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1795289217.19682,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1795289206.5179667,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1795289200.8522682,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1795289227.8219602,
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1795305077.8773515,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1795305092.7584817,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1795305072.73414,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1795305091.1336198,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1795305094.670041,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1795305082.9381258,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1795305094.8135202,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1795305081.271677,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1795305074.3450265,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1795305105.4904475,
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794302337.9157517,
-    "https://www.kaika.com.au/series/one-piece/": 1795289201.4944494,
-    "https://www.m-g.com.au/pre-orders/": 1795289212.6915295,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1795289195.8984864,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1795289197.5315049
+    "https://www.kaika.com.au/series/one-piece/": 1795305076.20483,
+    "https://www.m-g.com.au/pre-orders/": 1795305090.2332108,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1795305069.3228846,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1795305070.941105
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2168,9 +2175,9 @@
       "state": "in_stock"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-op-17-booster-box": {
-      "available": false,
+      "available": true,
       "is_preorder": false,
-      "state": "unavailable"
+      "state": "in_stock"
     },
     "https://gamesportal.com.au/collections/one-piece-card-game||https://gamesportal.com.au/products/one-piece-card-game-op-18-booster-box": {
       "available": true,
@@ -10402,6 +10409,31 @@
       "is_preorder": false,
       "state": "in_stock"
     },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/41-50-blood-angels-angelus-assault-force/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/43-116-chaos-knights-hellhunt-lance-battleforce/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/48-105-space-marines-indomitus-task-force/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/49-53-necrons-disciples-of-nekrosor/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/53-34-space-wolves-battleforce-champions-of-fenris/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/agricola-special-wooden-edition/": {
       "available": true,
       "is_preorder": true,
@@ -10638,6 +10670,16 @@
       "state": "preorder_open"
     },
     "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/pokemon-delta-reign-booster-single/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/pokemon-flowing-fists-booster-box/": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
+    "https://www.m-g.com.au/pre-orders/||https://www.m-g.com.au/product/pokemon-flowing-fists-booster-single/": {
       "available": true,
       "is_preorder": true,
       "state": "preorder_open"
