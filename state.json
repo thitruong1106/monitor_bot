@@ -233,6 +233,7 @@
       "https://www.gameology.com.au/products/one-piece-card-game-op-17-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-op-17-the-worlds-strongest-warriors-booster-box-japanese",
       "https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box",
+      "https://www.gameology.com.au/products/one-piece-card-game-op-18-the-dominance-of-god-booster-box-japanese",
       "https://www.gameology.com.au/products/one-piece-card-game-op-19-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-op-20-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-paramount-war-op-02-booster-box",
@@ -286,6 +287,7 @@
       "https://www.gameology.com.au/products/one-piece-card-game-op-17-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-op-17-the-worlds-strongest-warriors-booster-box-japanese",
       "https://www.gameology.com.au/products/one-piece-card-game-op-18-booster-box",
+      "https://www.gameology.com.au/products/one-piece-card-game-op-18-the-dominance-of-god-booster-box-japanese",
       "https://www.gameology.com.au/products/one-piece-card-game-op-19-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-op-20-booster-box",
       "https://www.gameology.com.au/products/one-piece-card-game-paramount-war-op-02-booster-box",
@@ -1858,21 +1860,21 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1795263593.903711,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1795263606.7729948,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1795263588.8202083,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1795263605.1242669,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1795263608.6937504,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1795263598.934095,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1795263608.8791268,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1795263597.2830963,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1795263590.456881,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1795263619.5465822,
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1795289203.1070096,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1795289215.2601476,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1795289199.2626107,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1795289213.6754055,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1795289217.0751643,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1795289208.1122823,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1795289217.19682,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1795289206.5179667,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1795289200.8522682,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1795289227.8219602,
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794302337.9157517,
-    "https://www.kaika.com.au/series/one-piece/": 1795263592.2333057,
-    "https://www.m-g.com.au/pre-orders/": 1795263604.149024,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1795263585.5297682,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1795263587.1725352
+    "https://www.kaika.com.au/series/one-piece/": 1795289201.4944494,
+    "https://www.m-g.com.au/pre-orders/": 1795289212.6915295,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1795289195.8984864,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1795289197.5315049
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -2985,6 +2987,11 @@
       "is_preorder": true,
       "state": "unavailable"
     },
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-op-18-the-dominance-of-god-booster-box-japanese": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
+    },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order||https://www.gameology.com.au/products/one-piece-card-game-op-19-booster-box": {
       "available": false,
       "is_preorder": true,
@@ -3239,6 +3246,11 @@
       "available": false,
       "is_preorder": true,
       "state": "unavailable"
+    },
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-18-the-dominance-of-god-booster-box-japanese": {
+      "available": true,
+      "is_preorder": true,
+      "state": "preorder_open"
     },
     "https://www.gameology.com.au/collections/one-piece-booster-boxs||https://www.gameology.com.au/products/one-piece-card-game-op-19-booster-box": {
       "available": false,
