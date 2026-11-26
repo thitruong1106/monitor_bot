@@ -92,6 +92,7 @@
       "https://njcollectables.com.au/catalog/product/view/id/42631/s/one-piece-card-game-starter-deck-display-luffy-ace-st-30/category/8/",
       "https://njcollectables.com.au/one-piece-card-game-booster-display-carrying-on-his-will-op-13",
       "https://njcollectables.com.au/one-piece-card-game-booster-display-tba-op-17",
+      "https://njcollectables.com.au/one-piece-card-game-booster-display-the-dominance-of-god-op-18",
       "https://njcollectables.com.au/one-piece-card-game-card-case-display-devil-fruits",
       "https://njcollectables.com.au/one-piece-card-game-card-case-display-monkey-d-luffy",
       "https://njcollectables.com.au/one-piece-card-game-extra-booster-display-tba-eb-05",
@@ -1870,21 +1871,21 @@
     ]
   },
   "last_checked": {
-    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1795669664.617374,
-    "https://eetcg.com.au/collections/one-piece-card-game": 1795669677.6772249,
-    "https://gamesportal.com.au/collections/one-piece-card-game": 1795669660.4434273,
-    "https://njcollectables.com.au/trading-card-games/one-piece": 1795669676.0911927,
-    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1795669679.509171,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1795669669.6144738,
-    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1795669679.6093314,
-    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1795669668.013287,
-    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1795669662.029759,
-    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1795669691.781251,
+    "https://collectiblemadness.com.au/collections/one-piece-card-game": 1795705301.8860936,
+    "https://eetcg.com.au/collections/one-piece-card-game": 1795705313.9246762,
+    "https://gamesportal.com.au/collections/one-piece-card-game": 1795705296.711775,
+    "https://njcollectables.com.au/trading-card-games/one-piece": 1795705312.2768571,
+    "https://rhysticnostalgiagaming.com.au/collections/one-piece-sealed-instock": 1795705315.8891604,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs": 1795705307.016562,
+    "https://www.gameology.com.au/collections/one-piece-booster-boxs#/filter:ss_filter_availability:Show$2520Pre-Order": 1795705316.0839477,
+    "https://www.gamersroom.com.au/shop/category/one-piece-tcg/11249": 1795705305.2652721,
+    "https://www.goodgames.com.au/collections/one-piece-card-game-coming-soon": 1795705298.369957,
+    "https://www.goodgames.com.au/collections/one-piece-card-game?pf_pt_product_type=Trading+Card+Games": 1795705328.3264973,
     "https://www.goodgames.com.au/collections/one-piece-card-game?pf_st_availability=in-stock": 1794302337.9157517,
-    "https://www.kaika.com.au/series/one-piece/": 1795669662.9909732,
-    "https://www.m-g.com.au/pre-orders/": 1795669675.0622246,
-    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1795669657.1199858,
-    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1795669658.706304
+    "https://www.kaika.com.au/series/one-piece/": 1795705300.175557,
+    "https://www.m-g.com.au/pre-orders/": 1795705311.4535754,
+    "https://www.tcgroupau.com.au/collections/english-one-piece?pf_pt_product_type=Booster+Box&pf_pt_product_type=Collection+Box&pf_pt_product_type=Collectible+Trading+Cards&pf_pt_product_type=Sealed+Case": 1795705293.1986768,
+    "https://www.treasurecollectables.com.au/collections/other-tcgs": 1795705294.8597999
   },
   "products": {
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/collections/one-piece-card-game/products/one-piece-card-game-adventure-of-kamis-island-dp-10": {
@@ -1978,9 +1979,9 @@
       "state": "unavailable"
     },
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-tba-op-18-booster-box": {
-      "available": true,
+      "available": false,
       "is_preorder": true,
-      "state": "preorder_open"
+      "state": "unavailable"
     },
     "https://collectiblemadness.com.au/collections/one-piece-card-game||https://collectiblemadness.com.au/products/one-piece-card-game-the-azure-seas-seven-dp-09": {
       "available": false,
@@ -2308,6 +2309,11 @@
       "state": "in_stock"
     },
     "https://njcollectables.com.au/trading-card-games/one-piece||https://njcollectables.com.au/one-piece-card-game-booster-display-tba-op-17": {
+      "available": true,
+      "is_preorder": false,
+      "state": "in_stock"
+    },
+    "https://njcollectables.com.au/trading-card-games/one-piece||https://njcollectables.com.au/one-piece-card-game-booster-display-the-dominance-of-god-op-18": {
       "available": true,
       "is_preorder": false,
       "state": "in_stock"
